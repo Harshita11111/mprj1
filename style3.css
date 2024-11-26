@@ -156,3 +156,55 @@ div.para{
     padding: 30px;
     align-content: center;
 }
+
+
+.connectandcare{
+    /* display: flex;
+    justify-content: center; /* Center horizontally */
+    /* align-items: center; */ 
+    margin: 70 px;
+    padding: 60px;
+
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    padding: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    margin: 12px 0 8px;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #666;
+  }
