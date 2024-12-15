@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Header Styling */
@@ -17,20 +18,22 @@
 .navbar {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2.5rem;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+  
+    gap: 2.5rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
@@ -46,6 +49,7 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+   
     transition: background-color 0.3s ease;
 }
 
@@ -106,10 +110,11 @@
 }
 
 .overlay {
-    height: 200px;
+    height: 300px;
+    width: 600px;
     background: rgba(0, 0, 0, 0.1);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     border-radius: 10px;
     position: relative;
@@ -119,16 +124,17 @@
 }
 
 .overlay h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
 }
 
 .overlay p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 #btn1{
     position: relative;
     top: 50px;
+    margin-left: 20px;
     
 }
 
@@ -162,8 +168,8 @@ div.para{
     /* display: flex;
     justify-content: center; /* Center horizontally */
     /* align-items: center; */ 
-    margin: 70 px;
-    padding: 60px;
+    margin: 30 px;
+    padding: 150px;
 
 }
 
@@ -180,7 +186,7 @@ div.para{
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 400px;
-    height: 400px;
+    height: 450px;
     padding: 22px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -208,3 +214,290 @@ div.para{
     font-size: 16px;
     color: #666;
   }
+
+
+/* for form part */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+} */
+
+
+.getintouch{
+    display: flex;
+}
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.form-container h1 h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #5549c3;
+}
+
+
+/* #map {
+    height: 400px;
+    width: 100%;
+} */
+
+.main-footer {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 140px;
+    padding: 1rem 2rem;
+}
+.footerlink{
+
+    margin: 30px;
+}
+
+/* newsheader .background{
+    position: relative;
+    height: 100vh;
+    background: url('newsdog.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+    
+} */
+
+.navbar h1{
+    color: white;
+}
+.backgroundnews {
+    position: relative;
+    height: 70vh;
+    background: url('pet\ dpg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+    
+}
+
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.news-section {
+    padding: 120px;
+    margin: 75px;
+}
+.news-section h5{
+    color: green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.news-section h2 {
+    
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.news-section article {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.joinus{
+    background-color: black;
+    color: white;
+    
+    padding: 70px;
+    display: flex;
+}
+.joinus h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.joinus h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.first{
+    padding: 40px;
+    flex: 1;
+}
+.second{
+    padding: 40px;
+    flex: 1;
+}
+
+
+.joinusbutton {
+    background-color: white;
+    color: black;
+    /* height: 86px;
+    width: 34px;  */
+    
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.joinusbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.backgroundadptshelt {
+    position: relative;
+    height: 70vh;
+    background: url('adptshelt.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+    
+}
+
+.card-container1 {
+    width: 950px;
+    display: flex;
+    justify-content: left; /* Center horizontally */
+    align-items: center;
+    gap: 120px;
+  }
+
+
+  /* .animalwelfare{
+    padding: 100px;
+    margin: 20px;
+    align-items: center;
+
+  }
+  .photo{
+    height: 900px;
+    width: 750px;
+    background-size: cover;
+  } */
+   .animalwelfare{
+    padding: 80px;
+    /* margin-left: 190px; */
+    background-color: #d7d6d6;
+   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 190px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content h5 {
+    
+    color: #28a745; /* Green color */
+    margin: 0;
+    ;
+
+}
+
+.content h2 {
+   
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.image-container img {
+    align-items: center;
+    max-width: 100%;
+    height: 550px;
+    border-radius: 8px;
+}
