@@ -6,7 +6,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Header Styling */
+
+/* ---------HOME PAGE -------------- */
 .main-header {
     background-color: #333;
     padding: 1rem 2rem;
@@ -26,7 +27,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-  
+
     gap: 2.5rem;
 }
 
@@ -49,7 +50,7 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-   
+
     transition: background-color 0.3s ease;
 }
 
@@ -106,7 +107,7 @@
     opacity: 0.85;
     z-index: -1;
     transition: opacity 2s ease-in-out;
-    
+
 }
 
 .overlay {
@@ -135,7 +136,7 @@
     position: relative;
     top: 50px;
     margin-left: 20px;
-    
+
 }
 
 .connecting{
@@ -144,7 +145,7 @@
     align-items: center;
     margin: 90px;
     padding: 35px;
-    
+
 }
 .img{
     height: 500px;
@@ -153,11 +154,11 @@
     padding: 10px;
         background-image: url('connecting.jpg'); /* Replace with your image URL */
         background-size: cover; /* Cover the entire div */
-        
-    
+
+
 }
 div.para{
-    height: 500px; 
+    height: 500px;
     width: 460px;
     padding: 30px;
     align-content: center;
@@ -167,7 +168,7 @@ div.para{
 .connectandcare{
     /* display: flex;
     justify-content: center; /* Center horizontally */
-    /* align-items: center; */ 
+    /* align-items: center; */
     margin: 30 px;
     padding: 150px;
 
@@ -180,7 +181,7 @@ div.para{
     align-items: center;
     gap: 50px;
   }
-  
+
   .card {
     background: #ffffff;
     border: 1px solid #ddd;
@@ -192,24 +193,24 @@ div.para{
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .card:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
-  
+
   .card-img {
     border-radius: 8px;
     width: 100%;
     height: auto;
   }
-  
+
   .card-title {
     font-size: 22px;
     margin: 12px 0 8px;
     color: #333;
   }
-  
+
   .card-description {
     font-size: 16px;
     color: #666;
@@ -298,7 +299,7 @@ div.para{
     height: 400px;
     width: 100%;
 } */
-
+/* --------------NEW PAGE------------ */
 .main-footer {
     background-color: rgb(51, 51, 51);
     width: 100%;
@@ -321,7 +322,7 @@ div.para{
     opacity: 0.85;
     z-index: -1;
     transition: opacity 2s ease-in-out;
-    
+
 } */
 
 .navbar h1{
@@ -338,7 +339,7 @@ div.para{
     opacity: 0.85;
     z-index: -1;
     transition: opacity 2s ease-in-out;
-    
+
 }
 
 
@@ -366,7 +367,7 @@ div.para{
 }
 
 .news-section h2 {
-    
+
     font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -383,7 +384,7 @@ div.para{
 .joinus{
     background-color: black;
     color: white;
-    
+
     padding: 70px;
     display: flex;
 }
@@ -412,7 +413,7 @@ div.para{
     color: black;
     /* height: 86px;
     width: 34px;  */
-    
+
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -427,7 +428,7 @@ div.para{
 }
 
 
-
+/* ------------------ADOPT AND SHELTER PAGE-------------- */
 
 
 .backgroundadptshelt {
@@ -441,7 +442,7 @@ div.para{
     opacity: 0.85;
     z-index: -1;
     transition: opacity 2s ease-in-out;
-    
+
 }
 
 .card-container1 {
@@ -482,7 +483,7 @@ div.para{
 }
 
 .content h5 {
-    
+
     color: #28a745; /* Green color */
     margin: 0;
     ;
@@ -490,7 +491,7 @@ div.para{
 }
 
 .content h2 {
-   
+
     font-weight: bold;
     margin: 10px 0 0;
 }
@@ -501,3 +502,284 @@ div.para{
     height: 550px;
     border-radius: 8px;
 }
+
+
+/* -----------BLOG PAGE----------------- */
+.backgroundblog {
+    position: relative;
+    height: 70vh;
+    background: url('flamingo.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+.blogfeed{
+    padding: 80px;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+.blogfeed h1{
+    color: green;
+}
+.contain{
+    display: flex;
+    height: 400px;
+}
+/* .context{
+    
+    margin-left: 25px;
+    /* flex:0.6; */
+    
+            /* text-wrap: wrap;
+            overflow-wrap: break-word; /* Ensures long words wrap to the next line */
+  /* word-wrap: break-word;     Legacy support for older browsers */
+  /* word-break: break-word;    Forces breaks for very long words
+  white-space: normal;       Prevents text from extending in a single line */ */
+  /* max-width: 100%;   */
+/* } */ */
+
+/* .img1 {
+    width: 220px;
+    /* width: 100%; */
+    /* height: auto; Adjust height as needed */
+    /* height: 400px;
+    overflow: hidden;
+    position: relative; */
+    /* flex:0.3; */
+/* } */ */
+.contain img {
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); Center the image */
+}
+/* .dataessence{
+     text-wrap: wrap;
+} */
+ .contain .context{
+    margin-left: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal; 
+    flex: 1;
+ }
+ 
+.hidden-text {
+    display: none; /* Initially hides the text */
+}
+.context h5{
+    color: green;
+}
+
+
+/* ---------------ADOPTION PAGE--------------------*/
+  header {
+    text-align: center;
+    background-color: #f5a623;
+    color: white;
+    padding: 1.5em 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 100px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .animal-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .animal-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .animal-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .animal-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .adopt-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .adopt-button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+  /* General Section Styling */
+.adoption-section {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 80px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adoption-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .adoption-section ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .adoption-section ul li {
+    margin: 10px 0;
+  }
+  
+
+  /* -------------------EVENTS PAGE------------- */
+  /* .even {
+    text-align: center;
+    background-color: #f5a623;
+    color: white;
+    padding: 1.5em 0;
+  }
+  
+  .even h1 {
+    margin: 0;
+  } */
+
+  .backgroundevent {
+    position: relative;
+    height: 70vh;
+    background: url('lion.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+  
+  /* Events List */
+  .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+  }
+  
+  .event-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .event-card h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+  }
+  
+  .event-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .event-card .event-date {
+    font-weight: bold;
+    color: #f5a623;
+  }
+  
+  .event-card .event-location {
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .event-card .event-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .event-card .event-link:hover {
+    background-color: #45a049;
+  }
