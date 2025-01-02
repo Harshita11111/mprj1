@@ -87,47 +87,4 @@ function showLocationOnMap() {
 
 
 
-  // CODE FOR STATIC ADDING OF NEWS ARTICLE
-  const newsContainer = document.getElementById("news-container");
-
-  // Predefined articles
-  const articles = [
-    {
-      title: "Rescue Team Saves 20 Dogs from Floods",
-      description: "A heroic rescue team saved 20 dogs stranded due to heavy floods.",
-      image: "https://via.placeholder.com/300x200",
-      url: "#"
-    },
-    {
-      title: "Animal Shelter Hosts Adoption Drive",
-      description: "Local shelter successfully rehomes 50 animals in weekend drive.",
-      image: "https://via.placeholder.com/300x200",
-      url: "#"
-    },
-    {
-      title: "New Laws Protect Stray Animals",
-      description: "Legislation passed to improve welfare for stray animals nationwide.",
-      image: "https://via.placeholder.com/300x200",
-      url: "#"
-    },
-  ];
-  
-  // Display articles dynamically
-  function displayArticles() {
-    articles.forEach((article) => {
-      const articleDiv = document.createElement("div");
-      articleDiv.classList.add("news-article");
-  
-      articleDiv.innerHTML = `
  
-        <h3>${article.title}</h3>
-        <p>${article.description}</p>
-        <a href="${article.url}" target="_blank">Read More</a>
-      `;
-  
-      newsContainer.appendChild(articleDiv);
-    });
-  }
-  
-  // Load predefined articles
-  displayArticles();

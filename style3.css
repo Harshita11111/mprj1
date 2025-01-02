@@ -875,3 +875,46 @@ div.para{
   .event-card .event-link:hover {
     background-color: #45a049;
   }
+   /* ----------vet page---------- */
+   #map-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+  
+  /* Clinics Section */
+  #clinics-section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #clinics-section h2 {
+    text-align: center;
+  }
+  
+  #clinic-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #clinic-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #clinic-list li:last-child {
+    border-bottom: none;
+  }
