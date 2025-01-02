@@ -3,30 +3,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Header Styling */
+
+/* ---------HOME PAGE -------------- */
 .main-header {
     background-color: #333;
     padding: 1rem 2rem;
+    width: 100%;
+    height: 68px;
+    position: fixed;
 }
 
 .navbar {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 2.5rem;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+
+    gap: 2.5rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     transition: color 0.3s ease;
 }
 
@@ -42,6 +50,7 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+
     transition: background-color 0.3s ease;
 }
 
@@ -91,20 +100,22 @@
     position: relative;
     height: 100vh;
     background: url('background image.jpg') center/cover no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: flex start;
     opacity: 0.85;
     z-index: -1;
     transition: opacity 2s ease-in-out;
-    
+
 }
 
 .overlay {
-    height: 200px;
+    height: 300px;
+    width: 600px;
     background: rgba(0, 0, 0, 0.1);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     border-radius: 10px;
     position: relative;
@@ -114,15 +125,846 @@
 }
 
 .overlay h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
 }
 
 .overlay p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 #btn1{
     position: relative;
     top: 50px;
+    margin-left: 20px;
+
+}
+
+.connecting{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin: 90px;
+    padding: 35px;
+
+}
+.img{
+    height: 500px;
+    width: 462px;
+    margin:40 px;
+    padding: 10px;
+        background-image: url('connecting.jpg'); /* Replace with your image URL */
+        background-size: cover; /* Cover the entire div */
+
+
+}
+div.para{
+    height: 500px;
+    width: 460px;
+    padding: 30px;
+    align-content: center;
+}
+
+
+.connectandcare{
+    /* display: flex;
+    justify-content: center; /* Center horizontally */
+    /* align-items: center; */
+    margin: 30 px;
+    padding: 150px;
+
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 50px;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    height: 450px;
+    padding: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin: 12px 0 8px;
+    color: #333;
+  }
+
+  .card-description {
+    font-size: 16px;
+    color: #666;
+  }
+
+
+/* for form part */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+} */
+
+
+.getintouch{
+    display: flex;
+}
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.form-container h1 h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #5549c3;
+}
+
+
+/* #map {
+    height: 400px;
+    width: 100%;
+} */
+/* --------------NEW PAGE------------ */
+.main-footer {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 140px;
+    padding: 1rem 2rem;
+}
+.footerlink{
+
+    margin: 30px;
+}
+
+/* newsheader .background{
+    position: relative;
+    height: 100vh;
+    background: url('newsdog.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+} */
+
+.navbar h1{
+    color: white;
+}
+.backgroundnews {
+    position: relative;
+    height: 70vh;
+    background: url('pet\ dpg.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.news-section {
+    padding: 120px;
+    margin: 75px;
+}
+.news-section h5{
+    color: green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.news-section h2 {
+
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.news-section article {
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.joinus{
+    background-color: black;
+    color: white;
+
+    padding: 70px;
+    display: flex;
+}
+.joinus h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.joinus h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.first{
+    padding: 40px;
+    flex: 1;
+}
+.second{
+    padding: 40px;
+    flex: 1;
+}
+
+
+.joinusbutton {
+    background-color: white;
+    color: black;
+    /* height: 86px;
+    width: 34px;  */
+
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.joinusbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ------------------ADOPT AND SHELTER PAGE-------------- */
+
+
+.backgroundadptshelt {
+    position: relative;
+    height: 70vh;
+    background: url('adptshelt.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+.card-container1 {
+    width: 950px;
+    display: flex;
+    justify-content: left; /* Center horizontally */
+    align-items: center;
+    gap: 120px;
+  }
+
+
+  /* .animalwelfare{
+    padding: 100px;
+    margin: 20px;
+    align-items: center;
+
+  }
+  .photo{
+    height: 900px;
+    width: 750px;
+    background-size: cover;
+  } */
+   .animalwelfare{
+    padding: 80px;
+    /* margin-left: 190px; */
+    background-color: #d7d6d6;
+   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 190px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content h5 {
+
+    color: #28a745; /* Green color */
+    margin: 0;
+    ;
+
+}
+
+.content h2 {
+
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+.image-container img {
+    align-items: center;
+    max-width: 100%;
+    height: 550px;
+    border-radius: 8px;
+}
+
+
+/* -----------BLOG PAGE----------------- */
+.backgroundblog {
+    position: relative;
+    height: 70vh;
+    background: url('flamingo.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+.blogfeed{
+    padding: 80px;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+.blogfeed h1{
+    color: green;
+}
+.contain{
+    display: flex;
+    height: 400px;
+}
+/* .context{
     
+    margin-left: 25px;
+    /* flex:0.6; */
+    
+            /* text-wrap: wrap;
+            overflow-wrap: break-word; /* Ensures long words wrap to the next line */
+  /* word-wrap: break-word;     Legacy support for older browsers */
+  /* word-break: break-word;    Forces breaks for very long words
+  white-space: normal;       Prevents text from extending in a single line */ */
+  /* max-width: 100%;   */
+/* } */ */
+
+/* .img1 {
+    width: 220px;
+    /* width: 100%; */
+    /* height: auto; Adjust height as needed */
+    /* height: 400px;
+    overflow: hidden;
+    position: relative; */
+    /* flex:0.3; */
+/* } */ */
+.contain img {
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); Center the image */
+}
+/* .dataessence{
+     text-wrap: wrap;
+} */
+ .contain .context{
+    margin-left: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal; 
+    flex: 1;
+ }
+ 
+.hidden-text {
+    display: none; /* Initially hides the text */
+}
+.context h5{
+    color: green;
+}
+
+
+/* ---------------ADOPTION PAGE--------------------*/
+  header {
+    text-align: center;
+    background-color: #f5a623;
+    color: white;
+    padding: 1.5em 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 100px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .animal-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .animal-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .animal-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .animal-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .adopt-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .adopt-button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+  /* General Section Styling */
+.adoption-section {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 80px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adoption-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .adoption-section ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .adoption-section ul li {
+    margin: 10px 0;
+  }
+  
+
+  /* -------------------EVENTS PAGE------------- */
+  /* .even {
+    text-align: center;
+    background-color: #f5a623;
+    color: white;
+    padding: 1.5em 0;
+  }
+  
+  .even h1 {
+    margin: 0;
+  } */
+
+  .backgroundevent {
+    position: relative;
+    height: 70vh;
+    background: url('lion.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+  
+  /* Events List */
+  .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+  }
+  
+  .event-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .event-card h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+  }
+  
+  .event-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .event-card .event-date {
+    font-weight: bold;
+    color: #f5a623;
+  }
+  
+  .event-card .event-location {
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .event-card .event-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .event-card .event-link:hover {
+    background-color: #45a049;
+  }
+
+  /* -------------ABOUT---------- */
+  .backgroundabout {
+    position: relative;
+    height: 70vh;
+    background: url('about.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex start;
+    opacity: 0.85;
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 70px 70px 70px 70px;
+}
+
+.about-section h2 {
+  margin-bottom: 10px;
+  color: #45a049;
+}
+
+/*-------------DONATIONS PAGE----------*/
+
+#donation {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#sec-header {
+  background-color: #4CAF50;  
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#donation-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.donation-options, .donation-form, .why-donate{
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px; 
+}
+
+.amount-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.amount-buttons button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.amount-buttons button:hover {
+  background-color: #45a049;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+  width: calc(100% - 12px); 
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+#why-donate-img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .donation-options, .donation-form, .why-donate {
+      width: 95%; 
+  }
+}
+
+.how-it-helps {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.help-items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: fit-content;
+}
+
+.help-item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.help-item img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 45%;
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .card {
+      width: 90%; /* Cards take up full width on smaller screens */
+  }
+  .help-item{
+      width: 90%;
+  }
 }

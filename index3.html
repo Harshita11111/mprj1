@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with Background</title>
+    <title>HOME PAGE</title>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY" defer></script> -->
     <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="adoptshelter.html">Adopt</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li class="dropdown">
                     <a href="#">More &#x25BE;</a>
                     <ul class="dropdown-menu">
@@ -32,15 +39,111 @@
             <p>Connecting you to shelter and animals that need care and support</p>
             <a href="#services" class="contact-btn" id="btn1">Services</a></li>
         </div>
-        <!-- <div class="connecting">
-            <h6>CONNECTING FOR PAWS</h6>
-            <h3>partner in animal welfare</h3>
+    </section>
+        <section class="connecting">
+            <div class="para">
+            <h4>CONNECTING FOR PAWS</h4>
+            <br>
+            <h2>partner in animal welfare</h2>
             <p>Rescue and Rehome is an essential platform dedicated to enhancing animal welfare and wellness. We connect you with nearby shelter homes,
                  veterinarians, and valuable resources for animal care. Explore our listings of adoptable animals and stay informed about local animal 
                  welfare events. Plus, share your experiences and insights in our review section, helping to foster a supportive community.
                   Join us in creating a brighter future for animals in our community.</p>
-        </div> -->
-    </section>
+                  <!-- <p>Rescue and Rehome passionately supports animal welfare in Agra, IN. Our mission centers on raising awareness about the importance 
+                    of pet adoption and responsible ownership. We offer invaluable animal care tips, facilitate fundraising and 
+                    
+                    
+                    donations, and connect individuals with local veterinarians for injured pets. Whether you're looking to adopt or 
+                    support our cause, we invite you to join our community dedicated to giving every pet a chance at a loving home.</p> -->
+                  <br><br>
+                  <a href="#contact" >Get in touch</a>
+        </div>
+        <div class="img">
+            
+        </div>
+        </section>
+        <section class="connectandcare">
+            <h4>CONNECT AND CARE</h4>
+            <br>
+            <H1>Find your perfect pet and Support animal welfare</H1>
+            <br><br>
+        
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="pet dpg.jpg" alt="Dog Image" class="card-img">
+              <h3 class="card-title">Adoptable animals></h3>
+              <p class="card-description">Find your new furry friend waiting for a new home.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="fox.jpg" alt="Fox Image" class="card-img">
+              <h3 class="card-title">Animal welfare events</h3>
+              <p class="card-description">Stay updated on local events related to animal welfare.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="vet.jpg" alt="Card Image" class="card-img">
+              <h3 class="card-title">Veternary resouces</h3>
+              <p class="card-description">Access valuable information about local verternary doctors</p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="getintouch">
+            
+            <div class="form-container">
+                <h6>GET IN TOUCH</h6>
+            <BR></BR>
+
+            <h1>We would love to hear from you!!</h1>
+            <br>
+                
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <h1>Your Current Location</h1>
+            <div id="map"></div>
+
+
+        </section>
+        <section>
+        <footer class="main-footer">
+            <div class="footerlink">
+                <ul class="nav-links">
+                    <li><a href="#schedule appointment">Schedule Appointment</a></li>
+                    <li><a href="#completeintake">Complete Intake</a></li>
+                    <li><a href="#FAQ">#FAQ</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                
+            </div>
+
     
-</body><script src="script3.js"></script>
+
+        </footer>
+        </section>
+
+    
+</body>
+<!-- <script src="script3.js"></script> -->
 </html>
