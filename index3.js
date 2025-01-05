@@ -11,12 +11,14 @@ function displayFeedback() {
   // Display the latest 5 feedback entries
   const recentFeedback = feedbackData.slice(-5); // Show only the last 5 entries
   recentFeedback.forEach((feedback) => {
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-      <strong>${feedback.name}</strong> (${feedback.email}, ${feedback.phone}): 
-      ${feedback.message}
-    `;
-    feedbackList.appendChild(listItem);
+    const feedbackDiv = document.createElement("div");
+    feedbackDiv.classList.add("feedback-div");
+
+      feedbackDiv.innerHTML = `
+       <h3>${feedback.name}</h3>
+         <p>${feedback.message}</p>
+       `;
+    feedbackList.appendChild(feedbackDiv);
   });
 }
 
@@ -49,6 +51,12 @@ feedbackForm.addEventListener("submit", (e) => {
 
 // Display feedback when the page loads
 displayFeedback();
+
+
+
+
+
+
 
 
 
@@ -87,4 +95,54 @@ function showLocationOnMap() {
 
 
 
- 
+//  // Select feedback form and display container
+// const feedbackForm = document.getElementById("feedback");
+// const feedbackList = document.getElementById("feedback-list");
+
+// // Load existing feedback from localStorage
+// function loadFeedback() {
+//   const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
+//   feedbackList.innerHTML = ""; // Clear existing feedback
+
+//   feedbackData.forEach((item) => {
+//     displayFeedback(item.username, item.feedback);
+//   });
+// }
+
+// // Save feedback to localStorage
+// function saveFeedback(username, feedback) {
+//   const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
+//   feedbackData.push({ username, feedback });
+//   localStorage.setItem("feedback", JSON.stringify(feedbackData));
+// }
+
+// // Display feedback dynamically in div format
+// function displayFeedback(username, feedback) {
+//   const feedbackDiv = document.createElement("div");
+//   feedbackDiv.classList.add("feedback-div");
+
+//   feedbackDiv.innerHTML = `
+//     <h3>${username}</h3>
+//     <p>${feedback}</p>
+//   `;
+
+//   feedbackList.appendChild(feedbackDiv);
+// }
+
+// // Handle form submission
+// feedbackForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   const username = document.getElementById("username").value;
+//   const feedback = document.getElementById("feedback").value;
+
+//   // Save and display feedback
+//   saveFeedback(username, feedback);
+//   displayFeedback(username, feedback);
+
+//   // Clear form fields
+//   feedbackForm.reset();
+// });
+
+// // Load feedback on page load
+// loadFeedback();

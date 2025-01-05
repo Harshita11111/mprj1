@@ -45,10 +45,7 @@
 
 // ----------------------------for raed more button on pet adoption page---------------
 
-        function toggleVisibility() {
-                const hiddenText = document.querySelector('.hidden-text');
-                hiddenText.style.display = hiddenText.style.display === 'none' ? 'inline' : 'none';
-            }
+     
 
 
 
@@ -113,24 +110,24 @@
                   date: "January 20, 2024",
                   location: "City Park, Springfield",
                   description: "Join us for an adoption drive and meet your future furry friends!",
-                  image: "https://via.placeholder.com/300x150?text=Adoption+Drive",
-                  link: "#",
+                  image: "adopdrive.jpg",
+                  link: "https://www.facebook.com/ChennaiAdoptionDrive/",
                 },
                 {
                   title: "Pet Care Workshop",
                   date: "February 15, 2024",
                   location: "Community Hall, Greenfield",
                   description: "Learn essential pet care tips from experienced veterinarians.",
-                  image: "https://via.placeholder.com/300x150?text=Pet+Care+Workshop",
-                  link: "#",
+                  image: "petcare.jpg",
+                  link: "https://littlecrittercare.co.uk/pet-care-workshops/",
                 },
                 {
                   title: "Fundraising Gala",
                   date: "March 10, 2024",
                   location: "Grand Hotel, Rivertown",
                   description: "A gala dinner to raise funds for shelter animals in need.",
-                  image: "https://via.placeholder.com/300x150?text=Fundraising+Gala",
-                  link: "#",
+                  image: "fundraise.jpg",
+                  link: "https://www.kxnet.com/news/top-stories/turtle-mountain-animal-rescue-fundraising-to-keep-animals-safe/",
                 },
               ];
             

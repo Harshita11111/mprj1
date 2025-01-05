@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "name": "Bella",
+        "species": "Dog",
+        "breed": "Labrador Retriever",
+        "age": "2 years",
+        "gender": "Female",
+        "image": "dog1.jpg",
+        "description": "Friendly and playful Labrador looking for a loving home."
+    },
+    {
+        "id": 2,
+        "name": "Max",
+        "species": "Dog",
+        "breed": "Golden Retriever",
+        "age": "3 years",
+        "gender": "Male",
+        "image": "dog2.jpg",
+        "description": "Energetic and fun-loving Golden Retriever ready for adventure."
+    },
+    {
+        "id": 3,
+        "name": "Lucy",
+        "species": "Dog",
+        "breed": "Beagle",
+        "age": "1 year",
+        "gender": "Female",
+        "image": "dog3.jpg",
+        "description": "Curious and cheerful Beagle who loves walks."
+    },
+    {
+        "id": 4,
+        "name": "Charlie",
+        "species": "Dog",
+        "breed": "Bulldog",
+        "age": "4 years",
+        "gender": "Male",
+        "image": "dog4.jpg",
+        "description": "Calm and affectionate Bulldog who enjoys cuddles."
+    },
+    {
+        "id": 5,
+        "name": "Rocky",
+        "species": "Dog",
+        "breed": "German Shepherd",
+        "age": "2 years",
+        "gender": "Male",
+        "image": "dog5.jpg",
+        "description": "Loyal and protective German Shepherd ready for adoption."
+    },
+    {
+        "id": 6,
+        "name": "Whiskers",
+        "species": "Cat",
+        "breed": "Persian",
+        "age": "1 year",
+        "gender": "Male",
+        "image": "cat1.jpg",
+        "description": "Calm and gentle Persian cat who loves cuddles."
+    },
+    {
+        "id": 7,
+        "name": "Luna",
+        "species": "Cat",
+        "breed": "Siamese",
+        "age": "3 years",
+        "gender": "Female",
+        "image": "cat2.jpg",
+        "description": "Elegant and affectionate Siamese cat looking for a home."
+    },
+    {
+        "id": 8,
+        "name": "Milo",
+        "species": "Cat",
+        "breed": "Maine Coon",
+        "age": "2 years",
+        "gender": "Male",
+        "image": "cat3.jpg",
+        "description": "Fluffy and friendly Maine Coon who enjoys attention."
+    },
+    {
+        "id": 9,
+        "name": "Kitty",
+        "species": "Cat",
+        "breed": "Bengal",
+        "age": "1 year",
+        "gender": "Female",
+        "image": "cat4.jpg",
+        "description": "Playful and agile Bengal cat with a striking coat."
+    },
+    {
+        "id": 10,
+        "name": "Shadow",
+        "species": "Cat",
+        "breed": "Russian Blue",
+        "age": "4 years",
+        "gender": "Male",
+        "image": "cat5.jpg",
+        "description": "Quiet and gentle Russian Blue looking for a calm environment."
+    },
+    {
+        "id": 11,
+        "name": "Tweety",
+        "species": "Bird",
+        "breed": "Canary",
+        "age": "1 year",
+        "gender": "Female",
+        "image": "bird1.jpg",
+        "description": "Bright yellow Canary with a beautiful singing voice."
+    },
+    {
+        "id": 12,
+        "name": "Sky",
+        "species": "Bird",
+        "breed": "Parrot",
+        "age": "2 years",
+        "gender": "Male",
+        "image": "bird2.jpg",
+        "description": "Colorful and talkative Parrot ready for a new home."
+    },
+    {
+        "id": 13,
+        "name": "Sunny",
+        "species": "Bird",
+        "breed": "Cockatiel",
+        "age": "1.5 years",
+        "gender": "Female",
+        "image": "bird3.jpg",
+        "description": "Friendly Cockatiel who enjoys human interaction."
+    },
+    {
+        "id": 14,
+        "name": "Rio",
+        "species": "Bird",
+        "breed": "Macaw",
+        "age": "3 years",
+        "gender": "Male",
+        "image": "bird4.jpg",
+        "description": "Beautiful Macaw with vibrant feathers and a playful personality."
+    },
+    {
+        "id": 15,
+        "name": "Peach",
+        "species": "Bird",
+        "breed": "Lovebird",
+        "age": "1 year",
+        "gender": "Female",
+        "image": "bird5.jpg",
+        "description": "Affectionate Lovebird perfect for companionship."
+    },
+    {
+        "id": 16,
+        "name": "Shelly",
+        "species": "Tortoise",
+        "breed": "African Spurred",
+        "age": "5 years",
+        "gender": "Female",
+        "image": "tortoise1.jpg",
+        "description": "Slow and steady African Spurred Tortoise."
+    },
+    {
+        "id": 17,
+        "name": "Speedy",
+        "species": "Tortoise",
+        "breed": "Leopard Tortoise",
+        "age": "6 years",
+        "gender": "Male",
+        "image": "tortoise2.jpg",
+        "description": "Gentle Leopard Tortoise with a patterned shell."
+    },
+    {
+        "id": 18,
+        "name": "Goldie",
+        "species": "Fish",
+        "breed": "Goldfish",
+        "age": "1 year",
+        "gender": "Female",
+        "image": "fish1.jpg",
+        "description": "Shiny Goldfish that loves swimming around."
+    },
+    {
+        "id": 19,
+        "name": "Blue",
+        "species": "Fish",
+        "breed": "Betta",
+        "age": "6 months",
+        "gender": "Male",
+        "image": "fish2.jpg",
+        "description": "Vibrant Betta fish with flowing fins."
+    },
+    {
+        "id": 20,
+        "name": "Bubbles",
+        "species": "Fish",
+        "breed": "Guppy",
+        "age": "8 months",
+        "gender": "Male",
+        "image": "fish3.jpg",
+        "description": "Active Guppy fish that is easy to care for."
+    },
+    {
+        "id": 21,
+        "name": "Chip",
+        "species": "Squirrel",
+        "breed": "Red Squirrel",
+        "age": "2 years",
+        "gender": "Male",
+        "image": "squirrel1.jpg",
+        "description": "Energetic and curious Red Squirrel."
+    },
+    {
+        "id": 22,
+        "name": "Nutty",
+        "species": "Squirrel",
+        "breed": "Grey Squirrel",
+        "age": "1.5 years",
+        "gender": "Female",
+        "image": "squirrel2.jpg",
+        "description": "Friendly Grey Squirrel who loves nuts."
+    },
+    {
+        "id": 23,
+        "name": "Animal23",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal23.jpg",
+        "description": "Adorable animal number 23 looking for a loving home."
+    },
+    {
+        "id": 24,
+        "name": "Animal24",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal24.jpg",
+        "description": "Adorable animal number 24 looking for a loving home."
+    },
+    {
+        "id": 25,
+        "name": "Animal25",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal25.jpg",
+        "description": "Adorable animal number 25 looking for a loving home."
+    },
+    {
+        "id": 26,
+        "name": "Animal26",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal26.jpg",
+        "description": "Adorable animal number 26 looking for a loving home."
+    },
+    {
+        "id": 27,
+        "name": "Animal27",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal27.jpg",
+        "description": "Adorable animal number 27 looking for a loving home."
+    },
+    {
+        "id": 28,
+        "name": "Animal28",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal28.jpg",
+        "description": "Adorable animal number 28 looking for a loving home."
+    },
+    {
+        "id": 29,
+        "name": "Animal29",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal29.jpg",
+        "description": "Adorable animal number 29 looking for a loving home."
+    },
+    {
+        "id": 30,
+        "name": "Animal30",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal30.jpg",
+        "description": "Adorable animal number 30 looking for a loving home."
+    },
+    {
+        "id": 31,
+        "name": "Animal31",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal31.jpg",
+        "description": "Adorable animal number 31 looking for a loving home."
+    },
+    {
+        "id": 32,
+        "name": "Animal32",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal32.jpg",
+        "description": "Adorable animal number 32 looking for a loving home."
+    },
+    {
+        "id": 33,
+        "name": "Animal33",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal33.jpg",
+        "description": "Adorable animal number 33 looking for a loving home."
+    },
+    {
+        "id": 34,
+        "name": "Animal34",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal34.jpg",
+        "description": "Adorable animal number 34 looking for a loving home."
+    },
+    {
+        "id": 35,
+        "name": "Animal35",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal35.jpg",
+        "description": "Adorable animal number 35 looking for a loving home."
+    },
+    {
+        "id": 36,
+        "name": "Animal36",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal36.jpg",
+        "description": "Adorable animal number 36 looking for a loving home."
+    },
+    {
+        "id": 37,
+        "name": "Animal37",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal37.jpg",
+        "description": "Adorable animal number 37 looking for a loving home."
+    },
+    {
+        "id": 38,
+        "name": "Animal38",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal38.jpg",
+        "description": "Adorable animal number 38 looking for a loving home."
+    },
+    {
+        "id": 39,
+        "name": "Animal39",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal39.jpg",
+        "description": "Adorable animal number 39 looking for a loving home."
+    },
+    {
+        "id": 40,
+        "name": "Animal40",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal40.jpg",
+        "description": "Adorable animal number 40 looking for a loving home."
+    },
+    {
+        "id": 41,
+        "name": "Animal41",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal41.jpg",
+        "description": "Adorable animal number 41 looking for a loving home."
+    },
+    {
+        "id": 42,
+        "name": "Animal42",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal42.jpg",
+        "description": "Adorable animal number 42 looking for a loving home."
+    },
+    {
+        "id": 43,
+        "name": "Animal43",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal43.jpg",
+        "description": "Adorable animal number 43 looking for a loving home."
+    },
+    {
+        "id": 44,
+        "name": "Animal44",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal44.jpg",
+        "description": "Adorable animal number 44 looking for a loving home."
+    },
+    {
+        "id": 45,
+        "name": "Animal45",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal45.jpg",
+        "description": "Adorable animal number 45 looking for a loving home."
+    },
+    {
+        "id": 46,
+        "name": "Animal46",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal46.jpg",
+        "description": "Adorable animal number 46 looking for a loving home."
+    },
+    {
+        "id": 47,
+        "name": "Animal47",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal47.jpg",
+        "description": "Adorable animal number 47 looking for a loving home."
+    },
+    {
+        "id": 48,
+        "name": "Animal48",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal48.jpg",
+        "description": "Adorable animal number 48 looking for a loving home."
+    },
+    {
+        "id": 49,
+        "name": "Animal49",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal49.jpg",
+        "description": "Adorable animal number 49 looking for a loving home."
+    },
+    {
+        "id": 50,
+        "name": "Animal50",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal50.jpg",
+        "description": "Adorable animal number 50 looking for a loving home."
+    },
+    {
+        "id": 51,
+        "name": "Animal51",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal51.jpg",
+        "description": "Adorable animal number 51 looking for a loving home."
+    },
+    {
+        "id": 52,
+        "name": "Animal52",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal52.jpg",
+        "description": "Adorable animal number 52 looking for a loving home."
+    },
+    {
+        "id": 53,
+        "name": "Animal53",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal53.jpg",
+        "description": "Adorable animal number 53 looking for a loving home."
+    },
+    {
+        "id": 54,
+        "name": "Animal54",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal54.jpg",
+        "description": "Adorable animal number 54 looking for a loving home."
+    },
+    {
+        "id": 55,
+        "name": "Animal55",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal55.jpg",
+        "description": "Adorable animal number 55 looking for a loving home."
+    },
+    {
+        "id": 56,
+        "name": "Animal56",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal56.jpg",
+        "description": "Adorable animal number 56 looking for a loving home."
+    },
+    {
+        "id": 57,
+        "name": "Animal57",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal57.jpg",
+        "description": "Adorable animal number 57 looking for a loving home."
+    },
+    {
+        "id": 58,
+        "name": "Animal58",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal58.jpg",
+        "description": "Adorable animal number 58 looking for a loving home."
+    },
+    {
+        "id": 59,
+        "name": "Animal59",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal59.jpg",
+        "description": "Adorable animal number 59 looking for a loving home."
+    },
+    {
+        "id": 60,
+        "name": "Animal60",
+        "species": "Mixed",
+        "breed": "Unknown",
+        "age": "Varied",
+        "gender": "Unknown",
+        "image": "animal60.jpg",
+        "description": "Adorable animal number 60 looking for a loving home."
+    }
+]

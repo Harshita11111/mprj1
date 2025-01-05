@@ -14,10 +14,13 @@
     <header class="main-header">
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="adoptshelter.html">Adopt</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="news.html">News & Events</a></li>
                 <li class="dropdown">
                     <a href="#">More &#x25BE;</a>
                     <ul class="dropdown-menu">
@@ -77,6 +80,58 @@
             </div>
          </div>
     </section>
-    <script src="script3.js"></script>
+
+     <!-- Blog Section -->
+  <section class="blog-section">
+    <h1>Animal Welfare Blogs</h1>
+    <!-- <p>Read insights and inspiring stories about animal welfare and adoption.</p>-->
+
+   <!-- Blogs from API -->
+    <div id="api-blogs" class="blog-container">
+      <!-- Blogs from Twingly API will be dynamically added here -->
+    </div>
+
+    <!-- User Blogs Section -->
+    <h2>Community Blogs</h2>
+    <div id="user-blogs" class="blog-container">
+      <!-- User-written blogs will appear here -->
+    </div>
+
+    <!-- Blog Submission Form -->
+    <section class="write-blog">
+      <h2>Write Your Blog</h2>
+      <form id="blog-form">
+        <input type="text" id="title" placeholder="Blog Title" required>
+        <input type="text" id="author" placeholder="Author Name" required>
+        <textarea id="content" placeholder="Write your blog here..." required></textarea>
+        <button type="submit">Post Blog</button>
+      </form>
+    </section>
+  </section>
+    <section class="joinus">
+        <div class="first">
+            <h5>GET INVOLVED TODAY</h5>
+            <h2>Join us in making a difference!</h2>
+        </div>
+       <div class="second">
+            <a class="joinusbutton" href="#">GET IN TOUCH</a>
+            </div>
+    </section>
+    <section>
+        <footer class="main-footer">
+            <div class="footerlink">
+                <ul class="nav-links">
+                    <li><a href="#schedule appointment">Schedule Appointment</a></li>
+                    <li><a href="#completeintake">Complete Intake</a></li>
+                    <li><a href="#FAQ">#FAQ</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                
+            </div>
+    
+    
+    
+        </footer>
+        </section>
+    <script src="blog.js"></script>
 </body>
 </html>

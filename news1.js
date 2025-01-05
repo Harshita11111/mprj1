@@ -60,11 +60,11 @@ function displayArticles(articles) {
     const imageUrl = article.urlToImage || article.image || "https://via.placeholder.com/300x200";
     const description = article.description || "No description available.";
 
-    // Add card content
+    // Add articleDiv content
     articleDiv.innerHTML = `
-      <img src="${imageUrl}" alt="${article.title}">
+      <img src="${imageUrl}" alt="${article.title}"  >
       <h3>${article.title}</h3>
-      <p>${description.substring(0, 100)}...</p>
+      <p>${description.substring(0, 130)}...</p>
       <a href="${article.url}" target="_blank">Read More</a>
       <hr><br>
     `;
