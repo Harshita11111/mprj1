@@ -42,7 +42,7 @@ function initMap() {
 function searchNearbyClinics(location) {
   const request = {
     location: location,
-    radius: 5000, // Search within 5 km
+    radius: 5000, // Search within 10 km
     type: ["veterinary_care"], // Veterinary clinics
   };
 

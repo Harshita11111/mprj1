@@ -17,7 +17,7 @@
         "breed": "Labrador Retriever",
         "age": "3 years",
         "gender": "Male",
-        "image": "dog3.jpg",
+        "image": "/pet/2.jpeg",
         "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },

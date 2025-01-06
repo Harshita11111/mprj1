@@ -770,9 +770,19 @@ border-bottom: none;
 /* Blog Container */
 .blog-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
+}
+
+.blog-container{
+  padding: 80px;
+  margin-left: 200px;
+  margin-right: 150px;
+}
+.blog-container h1{
+  color: green;
 }
 
 /* Blog Card */
@@ -805,6 +815,7 @@ border-bottom: none;
 }
 
 /* Write Blog Section */
+
 .write-blog form {
   display: flex;
   flex-direction: column;
@@ -829,6 +840,7 @@ border-bottom: none;
 .write-blog button:hover {
   background-color: #388e3c;
 }
+
 
 
 
