@@ -11,28 +11,28 @@
 </head>
 <body>
     <header class="main-header">
-    <nav class="navbar">
-        <h1>RESCUE AND REHOME</h1>
-        <ul class="nav-links">
-            <li><a href="index3.html">Home</a></li>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index3.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="adoptshelter.html">Adopt</a></li>
                 <li><a href="donation.html">Donate</a></li>
                 <li><a href="#volunteer">Volunteer</a></li>
                 <li><a href="blog.html">Blogs</a></li>
                 <li><a href="news.html">News & Events</a></li>
-            <li class="dropdown">
-                <a href="#">More &#x25BE;</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                </ul>
-            </li>
-        </ul>
-        <a href="#contact" class="contact-btn">Contact</a>
-    </nav>
-</header>
+                <li class="dropdown">
+                    <a href="#">More &#x25BE;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="vet.html">Vet</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </nav>
+    </header>
+
 <section class="backgroundnews">
     <div class="overlay">
         <h1>Animal Adoption Updates.</h1>
@@ -46,23 +46,18 @@
     <br><br><br>
     <hr>
     <br>
-    <article>
-        <h3><a href="#">News title</a></h3>
-        <br>
-        <p>This section is where you can provide a brief summary of your news article. Choose an article that's relevant to your visitors. A great summary is both engaging and informative.</p>
-    </article>
-    <hr><br>
-    <article>
-        <h3><a href="#">News title</a></h3>
-        <br>
-        <p>This section is where you can provide a brief summary of your news article. Choose an article that's relevant to your visitors. A great summary is both engaging and informative.</p>
-    </article>
-    <hr><br>
-    <article>
-        <h3><a href="#">News title</a></h3><br>
-        <p>This section is where you can provide a brief summary of your news article. Choose an article that's relevant to your visitors. A great summary is both engaging and informative.</p>
-    </article>
-</section>
+    <div id="news-container" class="news-container">
+        <!-- News articles will be dynamically loaded here -->
+      </div>
+    </section>
+    
+    <!-- <section id="news-section">
+
+        <h2>Latest Articles</h2>
+        <div id="necontainer" class="necontainer"> -->
+            <!-- News articles will be dynamically loaded here -->
+<!-- </div> </section> -->
+
 
 <section class="joinus">
     <div class="first">
@@ -70,14 +65,14 @@
         <h2>Join us in making a difference!</h2>
     </div>
    <div class="second">
-        <a class="joinusbutton" href="#">GET IN TOUCH</a>
+        <a class="joinusbutton" href="contact.html">GET IN TOUCH</a>
         </div>
 </section>
 <section>
     <footer class="main-footer">
         <div class="footerlink">
             <ul class="nav-links">
-                <li><a href="#schedule appointment">Schedule Appointment</a></li>
+                <li><a href="vet.html">Schedule Appointment</a></li>
                 <li><a href="#completeintake">Complete Intake</a></li>
                 <li><a href="#FAQ">#FAQ</a></li>
                 <li><a href="#resources">Resources</a></li>
@@ -89,7 +84,8 @@
     </footer>
     </section>
 
-
+<!-- <script src="news.js"></script> -->
+<script src="news1.js"></script>
 
    
 </body>
