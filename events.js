@@ -4,12 +4,12 @@ const eventDisplay = document.getElementById("event-display");
 // Fetch data from JSON file
 async function loadEvents() {
   try {
-    // Fetch the JSON file
-    const response = await fetch("try.json");
+    
+    const response = await fetch("try.json");  // Fetch the JSON file
     const events = await response.json();
 
-    // Function to show random event
-    function showRandomEvent() {
+    
+    function showRandomEvent() {     // Function to show random event
       // Pick a random event
       const randomIndex = Math.floor(Math.random() * events.length);
       const event = events[randomIndex];

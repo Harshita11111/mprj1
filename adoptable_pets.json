@@ -1,13 +1,13 @@
 [
     {
-        "id": 1,
+        "id": 1 ,
         "name": "Animal 1",
         "species": "Dog",
         "breed": "Labrador Retriever",
         "age": "2 years",
         "gender": "Female",
-        "image": "donation-medical.jpeg",
-        "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
+        "image": "/petimage.jpeg/1.jpeg",
+        "description" : "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Delhi, Delhi"
     },
     {
@@ -17,7 +17,7 @@
         "breed": "Labrador Retriever",
         "age": "3 years",
         "gender": "Male",
-        "image": "/pet/2.jpeg",
+        "image": "/petimage.jpeg/2.jpeg",
         "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },
@@ -28,7 +28,7 @@
         "breed": "Labrador Retriever",
         "age": "4 years",
         "gender": "Female",
-        "image": "dog4.jpg",
+        "image": "/petimage.jpeg/3.jpeg",
         "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Chennai, Tamil Nadu"
     },
@@ -39,7 +39,7 @@
         "breed": "Labrador Retriever",
         "age": "5 years",
         "gender": "Male",
-        "image": "dog5.jpg",
+        "image": "/petimage.jpeg/4.jpeg",
         "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Hyderabad, Telangana"
     },
@@ -50,7 +50,7 @@
         "breed": "Labrador Retriever",
         "age": "1 years",
         "gender": "Female",
-        "image": "dog1.jpg",
+        "image": "/petimage.jpeg/5.jpeg",
         "description": "A loving and adorable Dog (Labrador Retriever) looking for a new home.",
         "location": "Pune, Maharashtra"
     },
@@ -61,7 +61,7 @@
         "breed": "Golden Retriever",
         "age": "2 years",
         "gender": "Male",
-        "image": "dog2.jpg",
+        "image": "/petimage.jpeg/6.jpeg",
         "description": "A loving and adorable Dog (Golden Retriever) looking for a new home.",
         "location": "Ahmedabad, Gujarat"
     },
@@ -72,7 +72,7 @@
         "breed": "Golden Retriever",
         "age": "3 years",
         "gender": "Female",
-        "image": "dog3.jpg",
+        "image": "/petimage.jpeg/7.jpeg",
         "description": "A loving and adorable Dog (Golden Retriever) looking for a new home.",
         "location": "Kolkata, West Bengal"
     },
@@ -83,7 +83,7 @@
         "breed": "Golden Retriever",
         "age": "4 years",
         "gender": "Male",
-        "image": "dog4.jpg",
+        "image": "/petimage.jpeg/8.jpeg",
         "description": "A loving and adorable Dog (Golden Retriever) looking for a new home.",
         "location": "Jaipur, Rajasthan"
     },
@@ -94,7 +94,7 @@
         "breed": "Golden Retriever",
         "age": "5 years",
         "gender": "Female",
-        "image": "dog5.jpg",
+        "image": "/petimage.jpeg/9.jpeg",
         "description": "A loving and adorable Dog (Golden Retriever) looking for a new home.",
         "location": "Lucknow, Uttar Pradesh"
     },
@@ -105,7 +105,7 @@
         "breed": "Golden Retriever",
         "age": "1 years",
         "gender": "Male",
-        "image": "dog1.jpg",
+        "image": "/petimage.jpeg/10.jpeg",
         "description": "A loving and adorable Dog (Golden Retriever) looking for a new home.",
         "location": "Surat, Gujarat"
     },
@@ -116,7 +116,7 @@
         "breed": "Beagle",
         "age": "2 years",
         "gender": "Female",
-        "image": "dog2.jpg",
+        "image": "/petimage.jpeg/11.jpeg",
         "description": "A loving and adorable Dog (Beagle) looking for a new home.",
         "location": "Indore, Madhya Pradesh"
     },
@@ -127,7 +127,7 @@
         "breed": "Beagle",
         "age": "3 years",
         "gender": "Male",
-        "image": "dog3.jpg",
+        "image": "/petimage.jpeg/12.jpeg",
         "description": "A loving and adorable Dog (Beagle) looking for a new home.",
         "location": "Patna, Bihar"
     },
@@ -138,7 +138,7 @@
         "breed": "Beagle",
         "age": "4 years",
         "gender": "Female",
-        "image": "dog4.jpg",
+        "image": "/petimage.jpeg/13.jpeg",
         "description": "A loving and adorable Dog (Beagle) looking for a new home.",
         "location": "Nagpur, Maharashtra"
     },
@@ -149,7 +149,7 @@
         "breed": "Beagle",
         "age": "5 years",
         "gender": "Male",
-        "image": "dog5.jpg",
+        "image": "/petimage.jpeg/14.jpeg",
         "description": "A loving and adorable Dog (Beagle) looking for a new home.",
         "location": "Thiruvananthapuram, Kerala"
     },
@@ -160,7 +160,7 @@
         "breed": "Beagle",
         "age": "1 years",
         "gender": "Female",
-        "image": "dog1.jpg",
+        "image": "/petimage.jpeg/15.jpeg",
         "description": "A loving and adorable Dog (Beagle) looking for a new home.",
         "location": "Bhopal, Madhya Pradesh"
     },
@@ -171,7 +171,7 @@
         "breed": "Bulldog",
         "age": "2 years",
         "gender": "Male",
-        "image": "dog2.jpg",
+        "image": "/petimage.jpeg/16.jpeg",
         "description": "A loving and adorable Dog (Bulldog) looking for a new home.",
         "location": "Chandigarh, Chandigarh"
     },
@@ -182,7 +182,7 @@
         "breed": "Bulldog",
         "age": "3 years",
         "gender": "Female",
-        "image": "dog3.jpg",
+        "image": "/petimage.jpeg/17.jpeg",
         "description": "A loving and adorable Dog (Bulldog) looking for a new home.",
         "location": "Coimbatore, Tamil Nadu"
     },
@@ -193,7 +193,7 @@
         "breed": "Bulldog",
         "age": "4 years",
         "gender": "Male",
-        "image": "dog4.jpg",
+        "image": "/petimage.jpeg/18.jpeg",
         "description": "A loving and adorable Dog (Bulldog) looking for a new home.",
         "location": "Visakhapatnam, Andhra Pradesh"
     },
@@ -204,7 +204,7 @@
         "breed": "Bulldog",
         "age": "5 years",
         "gender": "Female",
-        "image": "dog5.jpg",
+        "image": "/petimage.jpeg/19.jpeg",
         "description": "A loving and adorable Dog (Bulldog) looking for a new home.",
         "location": "Vijayawada, Andhra Pradesh"
     },
@@ -215,7 +215,7 @@
         "breed": "Bulldog",
         "age": "1 years",
         "gender": "Male",
-        "image": "dog1.jpg",
+        "image": "/petimage.jpeg/20.jpeg",
         "description": "A loving and adorable Dog (Bulldog) looking for a new home.",
         "location": "Guwahati, Assam"
     },
@@ -226,7 +226,7 @@
         "breed": "German Shepherd",
         "age": "2 years",
         "gender": "Female",
-        "image": "dog2.jpg",
+        "image": "/petimage.jpeg/21.jpeg",
         "description": "A loving and adorable Dog (German Shepherd) looking for a new home.",
         "location": "Raipur, Chhattisgarh"
     },
@@ -237,7 +237,7 @@
         "breed": "German Shepherd",
         "age": "3 years",
         "gender": "Male",
-        "image": "dog3.jpg",
+        "image": "/petimage.jpeg/22.jpeg",
         "description": "A loving and adorable Dog (German Shepherd) looking for a new home.",
         "location": "Ranchi, Jharkhand"
     },
@@ -248,7 +248,7 @@
         "breed": "German Shepherd",
         "age": "4 years",
         "gender": "Female",
-        "image": "dog4.jpg",
+        "image": "/petimage.jpeg/23.jpeg",
         "description": "A loving and adorable Dog (German Shepherd) looking for a new home.",
         "location": "Amritsar, Punjab"
     },
@@ -259,7 +259,7 @@
         "breed": "German Shepherd",
         "age": "5 years",
         "gender": "Male",
-        "image": "dog5.jpg",
+        "image": "/petimage.jpeg/24.jpeg",
         "description": "A loving and adorable Dog (German Shepherd) looking for a new home.",
         "location": "Varanasi, Uttar Pradesh"
     },
@@ -270,7 +270,7 @@
         "breed": "German Shepherd",
         "age": "1 years",
         "gender": "Female",
-        "image": "dog1.jpg",
+        "image": "/petimage.jpeg/25.jpeg",
         "description": "A loving and adorable Dog (German Shepherd) looking for a new home.",
         "location": "Mumbai, Maharashtra"
     },
@@ -281,7 +281,7 @@
         "breed": "Persian",
         "age": "2 years",
         "gender": "Male",
-        "image": "cat2.jpg",
+        "image": "/petimage.jpeg/26.jpeg",
         "description": "A loving and adorable Cat (Persian) looking for a new home.",
         "location": "Delhi, Delhi"
     },
@@ -292,7 +292,7 @@
         "breed": "Persian",
         "age": "3 years",
         "gender": "Female",
-        "image": "cat3.jpg",
+        "image": "/petimage.jpeg/27.jpeg",
         "description": "A loving and adorable Cat (Persian) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },
@@ -303,7 +303,7 @@
         "breed": "Persian",
         "age": "4 years",
         "gender": "Male",
-        "image": "cat4.jpg",
+        "image": "/petimage.jpeg/28.jpeg",
         "description": "A loving and adorable Cat (Persian) looking for a new home.",
         "location": "Chennai, Tamil Nadu"
     },
@@ -314,7 +314,7 @@
         "breed": "Persian",
         "age": "5 years",
         "gender": "Female",
-        "image": "cat5.jpg",
+        "image": "/petimage.jpeg/29.jpeg",
         "description": "A loving and adorable Cat (Persian) looking for a new home.",
         "location": "Hyderabad, Telangana"
     },
@@ -325,7 +325,7 @@
         "breed": "Persian",
         "age": "1 years",
         "gender": "Male",
-        "image": "cat1.jpg",
+        "image": "/petimage.jpeg/30.jpeg",
         "description": "A loving and adorable Cat (Persian) looking for a new home.",
         "location": "Pune, Maharashtra"
     },
@@ -336,7 +336,7 @@
         "breed": "Siamese",
         "age": "2 years",
         "gender": "Female",
-        "image": "cat2.jpg",
+        "image": "/petimage.jpeg/31.jpeg",
         "description": "A loving and adorable Cat (Siamese) looking for a new home.",
         "location": "Ahmedabad, Gujarat"
     },
@@ -347,7 +347,7 @@
         "breed": "Siamese",
         "age": "3 years",
         "gender": "Male",
-        "image": "cat3.jpg",
+        "image": "/petimage.jpeg/32.jpeg",
         "description": "A loving and adorable Cat (Siamese) looking for a new home.",
         "location": "Kolkata, West Bengal"
     },
@@ -358,7 +358,7 @@
         "breed": "Siamese",
         "age": "4 years",
         "gender": "Female",
-        "image": "cat4.jpg",
+        "image": "/petimage.jpeg/33.jpeg",
         "description": "A loving and adorable Cat (Siamese) looking for a new home.",
         "location": "Jaipur, Rajasthan"
     },
@@ -369,7 +369,7 @@
         "breed": "Siamese",
         "age": "5 years",
         "gender": "Male",
-        "image": "cat5.jpg",
+        "image": "/petimage.jpeg/34.jpeg",
         "description": "A loving and adorable Cat (Siamese) looking for a new home.",
         "location": "Lucknow, Uttar Pradesh"
     },
@@ -380,7 +380,7 @@
         "breed": "Siamese",
         "age": "1 years",
         "gender": "Female",
-        "image": "cat1.jpg",
+        "image": "/petimage.jpeg/35.jpeg",
         "description": "A loving and adorable Cat (Siamese) looking for a new home.",
         "location": "Surat, Gujarat"
     },
@@ -391,7 +391,7 @@
         "breed": "Maine Coon",
         "age": "2 years",
         "gender": "Male",
-        "image": "cat2.jpg",
+        "image": "/petimage.jpeg/36.jpeg",
         "description": "A loving and adorable Cat (Maine Coon) looking for a new home.",
         "location": "Indore, Madhya Pradesh"
     },
@@ -402,7 +402,7 @@
         "breed": "Maine Coon",
         "age": "3 years",
         "gender": "Female",
-        "image": "cat3.jpg",
+        "image": "/petimage.jpeg/37.jpeg",
         "description": "A loving and adorable Cat (Maine Coon) looking for a new home.",
         "location": "Patna, Bihar"
     },
@@ -413,7 +413,7 @@
         "breed": "Maine Coon",
         "age": "4 years",
         "gender": "Male",
-        "image": "cat4.jpg",
+        "image": "/petimage.jpeg/38.jpeg",
         "description": "A loving and adorable Cat (Maine Coon) looking for a new home.",
         "location": "Nagpur, Maharashtra"
     },
@@ -424,7 +424,7 @@
         "breed": "Maine Coon",
         "age": "5 years",
         "gender": "Female",
-        "image": "cat5.jpg",
+        "image": "/petimage.jpeg/39.jpeg",
         "description": "A loving and adorable Cat (Maine Coon) looking for a new home.",
         "location": "Thiruvananthapuram, Kerala"
     },
@@ -435,7 +435,7 @@
         "breed": "Maine Coon",
         "age": "1 years",
         "gender": "Male",
-        "image": "cat1.jpg",
+        "image": "/petimage.jpeg/40.jpeg",
         "description": "A loving and adorable Cat (Maine Coon) looking for a new home.",
         "location": "Bhopal, Madhya Pradesh"
     },
@@ -446,7 +446,7 @@
         "breed": "Bengal",
         "age": "2 years",
         "gender": "Female",
-        "image": "cat2.jpg",
+        "image": "/petimage.jpeg/41.jpeg",
         "description": "A loving and adorable Cat (Bengal) looking for a new home.",
         "location": "Chandigarh, Chandigarh"
     },
@@ -457,7 +457,7 @@
         "breed": "Bengal",
         "age": "3 years",
         "gender": "Male",
-        "image": "cat3.jpg",
+        "image": "/petimage.jpeg/42.jpeg",
         "description": "A loving and adorable Cat (Bengal) looking for a new home.",
         "location": "Coimbatore, Tamil Nadu"
     },
@@ -468,7 +468,7 @@
         "breed": "Bengal",
         "age": "4 years",
         "gender": "Female",
-        "image": "cat4.jpg",
+        "image": "/petimage.jpeg/43.jpeg",
         "description": "A loving and adorable Cat (Bengal) looking for a new home.",
         "location": "Visakhapatnam, Andhra Pradesh"
     },
@@ -479,7 +479,7 @@
         "breed": "Bengal",
         "age": "5 years",
         "gender": "Male",
-        "image": "cat5.jpg",
+        "image": "/petimage.jpeg/44.jpeg",
         "description": "A loving and adorable Cat (Bengal) looking for a new home.",
         "location": "Vijayawada, Andhra Pradesh"
     },
@@ -490,7 +490,7 @@
         "breed": "Bengal",
         "age": "1 years",
         "gender": "Female",
-        "image": "cat1.jpg",
+        "image": "/petimage.jpeg/45.jpeg",
         "description": "A loving and adorable Cat (Bengal) looking for a new home.",
         "location": "Guwahati, Assam"
     },
@@ -501,7 +501,7 @@
         "breed": "Russian Blue",
         "age": "2 years",
         "gender": "Male",
-        "image": "cat2.jpg",
+        "image": "/petimage.jpeg/46.jpeg",
         "description": "A loving and adorable Cat (Russian Blue) looking for a new home.",
         "location": "Raipur, Chhattisgarh"
     },
@@ -512,7 +512,7 @@
         "breed": "Russian Blue",
         "age": "3 years",
         "gender": "Female",
-        "image": "cat3.jpg",
+        "image": "/petimage.jpeg/47.jpeg",
         "description": "A loving and adorable Cat (Russian Blue) looking for a new home.",
         "location": "Ranchi, Jharkhand"
     },
@@ -523,7 +523,7 @@
         "breed": "Russian Blue",
         "age": "4 years",
         "gender": "Male",
-        "image": "cat4.jpg",
+        "image": "/petimage.jpeg/48.jpeg",
         "description": "A loving and adorable Cat (Russian Blue) looking for a new home.",
         "location": "Amritsar, Punjab"
     },
@@ -534,7 +534,7 @@
         "breed": "Russian Blue",
         "age": "5 years",
         "gender": "Female",
-        "image": "cat5.jpg",
+        "image": "/petimage.jpeg/49.jpeg",
         "description": "A loving and adorable Cat (Russian Blue) looking for a new home.",
         "location": "Varanasi, Uttar Pradesh"
     },
@@ -545,7 +545,7 @@
         "breed": "Russian Blue",
         "age": "1 years",
         "gender": "Male",
-        "image": "cat1.jpg",
+        "image": "/petimage.jpeg/50.jpeg",
         "description": "A loving and adorable Cat (Russian Blue) looking for a new home.",
         "location": "Mumbai, Maharashtra"
     },
@@ -556,10 +556,12 @@
         "breed": "Canary",
         "age": "2 years",
         "gender": "Female",
-        "image": "bird2.jpg",
+        "image": "/petimage.jpeg/51.jpeg",
         "description": "A loving and adorable Bird (Canary) looking for a new home.",
         "location": "Delhi, Delhi"
     },
+
+
     {
         "id": 52,
         "name": "Animal 52",
@@ -567,7 +569,7 @@
         "breed": "Canary",
         "age": "3 years",
         "gender": "Male",
-        "image": "bird3.jpg",
+        "image": "/petimage.jpeg/52.jpeg",
         "description": "A loving and adorable Bird (Canary) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },
@@ -578,120 +580,120 @@
         "breed": "Canary",
         "age": "4 years",
         "gender": "Female",
-        "image": "bird4.jpg",
+        "image": "/petimage.jpeg/53.jpeg",
         "description": "A loving and adorable Bird (Canary) looking for a new home.",
         "location": "Chennai, Tamil Nadu"
     },
     {
-        "id": 54,
-        "name": "Animal 54",
-        "species": "Bird",
-        "breed": "Canary",
-        "age": "5 years",
-        "gender": "Male",
-        "image": "bird5.jpg",
-        "description": "A loving and adorable Bird (Canary) looking for a new home.",
-        "location": "Hyderabad, Telangana"
-    },
-    {
-        "id": 55,
-        "name": "Animal 55",
-        "species": "Bird",
-        "breed": "Canary",
-        "age": "1 years",
-        "gender": "Female",
-        "image": "bird1.jpg",
-        "description": "A loving and adorable Bird (Canary) looking for a new home.",
-        "location": "Pune, Maharashtra"
-    },
-    {
-        "id": 56,
-        "name": "Animal 56",
-        "species": "Bird",
-        "breed": "Parrot",
-        "age": "2 years",
-        "gender": "Male",
-        "image": "bird2.jpg",
-        "description": "A loving and adorable Bird (Parrot) looking for a new home.",
-        "location": "Ahmedabad, Gujarat"
-    },
-    {
-        "id": 57,
-        "name": "Animal 57",
-        "species": "Bird",
-        "breed": "Parrot",
-        "age": "3 years",
-        "gender": "Female",
-        "image": "bird3.jpg",
-        "description": "A loving and adorable Bird (Parrot) looking for a new home.",
-        "location": "Kolkata, West Bengal"
-    },
-    {
-        "id": 58,
-        "name": "Animal 58",
-        "species": "Bird",
-        "breed": "Parrot",
-        "age": "4 years",
-        "gender": "Male",
-        "image": "bird4.jpg",
-        "description": "A loving and adorable Bird (Parrot) looking for a new home.",
-        "location": "Jaipur, Rajasthan"
-    },
-    {
-        "id": 59,
-        "name": "Animal 59",
-        "species": "Bird",
-        "breed": "Parrot",
-        "age": "5 years",
-        "gender": "Female",
-        "image": "bird5.jpg",
-        "description": "A loving and adorable Bird (Parrot) looking for a new home.",
-        "location": "Lucknow, Uttar Pradesh"
-    },
-    {
-        "id": 60,
-        "name": "Animal 60",
-        "species": "Bird",
-        "breed": "Parrot",
-        "age": "1 years",
-        "gender": "Male",
-        "image": "bird1.jpg",
-        "description": "A loving and adorable Bird (Parrot) looking for a new home.",
-        "location": "Surat, Gujarat"
-    },
-    {
-        "id": 61,
-        "name": "Animal 61",
-        "species": "Bird",
-        "breed": "Cockatiel",
-        "age": "2 years",
-        "gender": "Female",
-        "image": "bird2.jpg",
-        "description": "A loving and adorable Bird (Cockatiel) looking for a new home.",
-        "location": "Indore, Madhya Pradesh"
-    },
-    {
-        "id": 62,
-        "name": "Animal 62",
-        "species": "Bird",
-        "breed": "Cockatiel",
-        "age": "3 years",
-        "gender": "Male",
-        "image": "bird3.jpg",
-        "description": "A loving and adorable Bird (Cockatiel) looking for a new home.",
-        "location": "Patna, Bihar"
-    },
-    {
-        "id": 63,
-        "name": "Animal 63",
-        "species": "Bird",
-        "breed": "Cockatiel",
-        "age": "4 years",
-        "gender": "Female",
-        "image": "bird4.jpg",
-        "description": "A loving and adorable Bird (Cockatiel) looking for a new home.",
-        "location": "Nagpur, Maharashtra"
-    },
+    "id": 54,
+    "name": "Animal 54",
+    "species": "Tortoise",
+    "breed": "African Spurred",
+    "age": "4 years",
+    "gender": "Male",
+    "image": "/petimage.jpeg/54.jpeg",
+    "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
+    "location": "Chennai, Tamil Nadu"
+   },
+  {
+    "id": 55,
+    "name": "Animal 55",
+    "species": "Tortoise",
+    "breed": "African Spurred",
+    "age": "5 years",
+    "gender": "Female",
+    "image": "/petimage.jpeg/55.jpeg",
+    "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
+    "location": "Hyderabad, Telangana"
+  },
+  {
+    "id": 56,
+    "name": "Animal 56",
+    "species": "Tortoise",
+    "breed": "African Spurred",
+    "age": "1 years",
+    "gender": "Male",
+    "image": "/petimage.jpeg/56.jpeg",
+    "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
+    "location": "Pune, Maharashtra"
+  },
+  {
+    "id": 57,
+    "name": "Animal 57",
+    "species": "Tortoise",
+    "breed": "Leopard Tortoise",
+    "age": "2 years",
+    "gender": "Female",
+    "image": "/petimage.jpeg/57.jpeg",
+    "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
+    "location": "Ahmedabad, Gujarat"
+  },
+  {
+    "id": 58,
+    "name": "Animal 58",
+    "species": "Tortoise",
+    "breed": "Leopard Tortoise",
+    "age": "3 years",
+    "gender": "Male",
+    "image": "/petimage.jpeg/58.jpeg",
+    "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
+    "location": "Kolkata, West Bengal"
+ },
+ {
+    "id": 59,
+    "name": "Animal 59",
+    "species": "Tortoise",
+    "breed": "Leopard Tortoise",
+    "age": "4 years",
+    "gender": "Female",
+    "image": "/petimage.jpeg/59.jpg",
+    "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
+    "location": "Jaipur, Rajasthan"
+ },
+ {
+    "id": 60,
+    "name": "Animal 60",
+    "species": "Tortoise",
+    "breed": "Leopard Tortoise",
+    "age": "5 years",
+    "gender": "Male",
+    "image": "/petimage.jpeg/60.jpeg",
+    "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
+    "location": "Lucknow, Uttar Pradesh"
+ },
+ {
+    "id": 61,
+    "name": "Animal 61",
+    "species": "Tortoise",
+    "breed": "Leopard Tortoise",
+    "age": "1 years",
+    "gender": "Female",
+    "image": "/petimage.jpeg/61.jpeg",
+    "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
+    "location": "Surat, Gujarat"
+ },
+{
+    "id": 62,
+    "name": "Animal 62",
+    "species": "Fish",
+    "breed": "Goldfish",
+    "age": "2 years",
+    "gender": "Male",
+    "image": "/petimage.jpeg/62.jpeg",
+    "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
+    "location": "Indore, Madhya Pradesh"
+ },
+ {
+    "id": 63,
+    "name": "Animal 63",
+    "species": "Fish",
+    "breed": "Goldfish",
+    "age": "3 years",
+    "gender": "Female",
+    "image": "/petimage.jpeg/63.jpeg",
+    "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
+    "location": "Patna, Bihar"
+  },
     {
         "id": 64,
         "name": "Animal 64",
@@ -699,7 +701,7 @@
         "breed": "Cockatiel",
         "age": "5 years",
         "gender": "Male",
-        "image": "bird5.jpg",
+        "image": "bird5.jpeg",
         "description": "A loving and adorable Bird (Cockatiel) looking for a new home.",
         "location": "Thiruvananthapuram, Kerala"
     },
@@ -710,7 +712,7 @@
         "breed": "Cockatiel",
         "age": "1 years",
         "gender": "Female",
-        "image": "bird1.jpg",
+        "image": "bird1.jpeg",
         "description": "A loving and adorable Bird (Cockatiel) looking for a new home.",
         "location": "Bhopal, Madhya Pradesh"
     },
@@ -721,7 +723,7 @@
         "breed": "Macaw",
         "age": "2 years",
         "gender": "Male",
-        "image": "bird2.jpg",
+        "image": "bird2.jpeg",
         "description": "A loving and adorable Bird (Macaw) looking for a new home.",
         "location": "Chandigarh, Chandigarh"
     },
@@ -732,7 +734,7 @@
         "breed": "Macaw",
         "age": "3 years",
         "gender": "Female",
-        "image": "bird3.jpg",
+        "image": "bird3.jpeg",
         "description": "A loving and adorable Bird (Macaw) looking for a new home.",
         "location": "Coimbatore, Tamil Nadu"
     },
@@ -743,7 +745,7 @@
         "breed": "Macaw",
         "age": "4 years",
         "gender": "Male",
-        "image": "bird4.jpg",
+        "image": "bird4.jpeg",
         "description": "A loving and adorable Bird (Macaw) looking for a new home.",
         "location": "Visakhapatnam, Andhra Pradesh"
     },
@@ -754,7 +756,7 @@
         "breed": "Macaw",
         "age": "5 years",
         "gender": "Female",
-        "image": "bird5.jpg",
+        "image": "bird5.jpeg",
         "description": "A loving and adorable Bird (Macaw) looking for a new home.",
         "location": "Vijayawada, Andhra Pradesh"
     },
@@ -765,7 +767,7 @@
         "breed": "Macaw",
         "age": "1 years",
         "gender": "Male",
-        "image": "bird1.jpg",
+        "image": "bird1.jpeg",
         "description": "A loving and adorable Bird (Macaw) looking for a new home.",
         "location": "Guwahati, Assam"
     },
@@ -776,7 +778,7 @@
         "breed": "Lovebird",
         "age": "2 years",
         "gender": "Female",
-        "image": "bird2.jpg",
+        "image": "bird2.jpeg",
         "description": "A loving and adorable Bird (Lovebird) looking for a new home.",
         "location": "Raipur, Chhattisgarh"
     },
@@ -787,7 +789,7 @@
         "breed": "Lovebird",
         "age": "3 years",
         "gender": "Male",
-        "image": "bird3.jpg",
+        "image": "bird3.jpeg",
         "description": "A loving and adorable Bird (Lovebird) looking for a new home.",
         "location": "Ranchi, Jharkhand"
     },
@@ -798,7 +800,7 @@
         "breed": "Lovebird",
         "age": "4 years",
         "gender": "Female",
-        "image": "bird4.jpg",
+        "image": "bird4.jpeg",
         "description": "A loving and adorable Bird (Lovebird) looking for a new home.",
         "location": "Amritsar, Punjab"
     },
@@ -809,7 +811,7 @@
         "breed": "Lovebird",
         "age": "5 years",
         "gender": "Male",
-        "image": "bird5.jpg",
+        "image": "bird5.jpeg",
         "description": "A loving and adorable Bird (Lovebird) looking for a new home.",
         "location": "Varanasi, Uttar Pradesh"
     },
@@ -820,7 +822,7 @@
         "breed": "Lovebird",
         "age": "1 years",
         "gender": "Female",
-        "image": "bird1.jpg",
+        "image": "bird1.jpeg",
         "description": "A loving and adorable Bird (Lovebird) looking for a new home.",
         "location": "Mumbai, Maharashtra"
     },
@@ -831,7 +833,7 @@
         "breed": "African Spurred",
         "age": "2 years",
         "gender": "Male",
-        "image": "tortoise2.jpg",
+        "image": "tortoise2.jpeg",
         "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
         "location": "Delhi, Delhi"
     },
@@ -842,7 +844,7 @@
         "breed": "African Spurred",
         "age": "3 years",
         "gender": "Female",
-        "image": "tortoise3.jpg",
+        "image": "tortoise3.jpeg",
         "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },
@@ -853,7 +855,7 @@
         "breed": "African Spurred",
         "age": "4 years",
         "gender": "Male",
-        "image": "tortoise4.jpg",
+        "image": "tortoise4.jpeg",
         "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
         "location": "Chennai, Tamil Nadu"
     },
@@ -864,7 +866,7 @@
         "breed": "African Spurred",
         "age": "5 years",
         "gender": "Female",
-        "image": "tortoise5.jpg",
+        "image": "tortoise5.jpeg",
         "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
         "location": "Hyderabad, Telangana"
     },
@@ -875,7 +877,7 @@
         "breed": "African Spurred",
         "age": "1 years",
         "gender": "Male",
-        "image": "tortoise1.jpg",
+        "image": "tortoise1.jpeg",
         "description": "A loving and adorable Tortoise (African Spurred) looking for a new home.",
         "location": "Pune, Maharashtra"
     },
@@ -886,7 +888,7 @@
         "breed": "Leopard Tortoise",
         "age": "2 years",
         "gender": "Female",
-        "image": "tortoise2.jpg",
+        "image": "tortoise2.jpeg",
         "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
         "location": "Ahmedabad, Gujarat"
     },
@@ -897,7 +899,7 @@
         "breed": "Leopard Tortoise",
         "age": "3 years",
         "gender": "Male",
-        "image": "tortoise3.jpg",
+        "image": "tortoise3.jpeg",
         "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
         "location": "Kolkata, West Bengal"
     },
@@ -908,7 +910,7 @@
         "breed": "Leopard Tortoise",
         "age": "4 years",
         "gender": "Female",
-        "image": "tortoise4.jpg",
+        "image": "tortoise4.jpeg",
         "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
         "location": "Jaipur, Rajasthan"
     },
@@ -919,7 +921,7 @@
         "breed": "Leopard Tortoise",
         "age": "5 years",
         "gender": "Male",
-        "image": "tortoise5.jpg",
+        "image": "tortoise5.jpeg",
         "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
         "location": "Lucknow, Uttar Pradesh"
     },
@@ -930,7 +932,7 @@
         "breed": "Leopard Tortoise",
         "age": "1 years",
         "gender": "Female",
-        "image": "tortoise1.jpg",
+        "image": "tortoise1.jpeg",
         "description": "A loving and adorable Tortoise (Leopard Tortoise) looking for a new home.",
         "location": "Surat, Gujarat"
     },
@@ -941,7 +943,7 @@
         "breed": "Goldfish",
         "age": "2 years",
         "gender": "Male",
-        "image": "fish2.jpg",
+        "image": "fish2.jpeg",
         "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
         "location": "Indore, Madhya Pradesh"
     },
@@ -952,7 +954,7 @@
         "breed": "Goldfish",
         "age": "3 years",
         "gender": "Female",
-        "image": "fish3.jpg",
+        "image": "fish3.jpeg",
         "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
         "location": "Patna, Bihar"
     },
@@ -963,7 +965,7 @@
         "breed": "Goldfish",
         "age": "4 years",
         "gender": "Male",
-        "image": "fish4.jpg",
+        "image": "fish4.jpeg",
         "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
         "location": "Nagpur, Maharashtra"
     },
@@ -974,7 +976,7 @@
         "breed": "Goldfish",
         "age": "5 years",
         "gender": "Female",
-        "image": "fish5.jpg",
+        "image": "fish5.jpeg",
         "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
         "location": "Thiruvananthapuram, Kerala"
     },
@@ -985,7 +987,7 @@
         "breed": "Goldfish",
         "age": "1 years",
         "gender": "Male",
-        "image": "fish1.jpg",
+        "image": "fish1.jpeg",
         "description": "A loving and adorable Fish (Goldfish) looking for a new home.",
         "location": "Bhopal, Madhya Pradesh"
     },
@@ -996,7 +998,7 @@
         "breed": "Betta",
         "age": "2 years",
         "gender": "Female",
-        "image": "fish2.jpg",
+        "image": "fish2.jpeg",
         "description": "A loving and adorable Fish (Betta) looking for a new home.",
         "location": "Chandigarh, Chandigarh"
     },
@@ -1007,7 +1009,7 @@
         "breed": "Betta",
         "age": "3 years",
         "gender": "Male",
-        "image": "fish3.jpg",
+        "image": "fish3.jpeg",
         "description": "A loving and adorable Fish (Betta) looking for a new home.",
         "location": "Coimbatore, Tamil Nadu"
     },
@@ -1018,7 +1020,7 @@
         "breed": "Betta",
         "age": "4 years",
         "gender": "Female",
-        "image": "fish4.jpg",
+        "image": "fish4.jpeg",
         "description": "A loving and adorable Fish (Betta) looking for a new home.",
         "location": "Visakhapatnam, Andhra Pradesh"
     },
@@ -1029,7 +1031,7 @@
         "breed": "Betta",
         "age": "5 years",
         "gender": "Male",
-        "image": "fish5.jpg",
+        "image": "fish5.jpeg",
         "description": "A loving and adorable Fish (Betta) looking for a new home.",
         "location": "Vijayawada, Andhra Pradesh"
     },
@@ -1040,7 +1042,7 @@
         "breed": "Betta",
         "age": "1 years",
         "gender": "Female",
-        "image": "fish1.jpg",
+        "image": "fish1.jpeg",
         "description": "A loving and adorable Fish (Betta) looking for a new home.",
         "location": "Guwahati, Assam"
     },
@@ -1051,7 +1053,7 @@
         "breed": "Guppy",
         "age": "2 years",
         "gender": "Male",
-        "image": "fish2.jpg",
+        "image": "fish2.jpeg",
         "description": "A loving and adorable Fish (Guppy) looking for a new home.",
         "location": "Raipur, Chhattisgarh"
     },
@@ -1062,7 +1064,7 @@
         "breed": "Guppy",
         "age": "3 years",
         "gender": "Female",
-        "image": "fish3.jpg",
+        "image": "fish3.jpeg",
         "description": "A loving and adorable Fish (Guppy) looking for a new home.",
         "location": "Ranchi, Jharkhand"
     },
@@ -1073,7 +1075,7 @@
         "breed": "Guppy",
         "age": "4 years",
         "gender": "Male",
-        "image": "fish4.jpg",
+        "image": "fish4.jpeg",
         "description": "A loving and adorable Fish (Guppy) looking for a new home.",
         "location": "Amritsar, Punjab"
     },
@@ -1084,7 +1086,7 @@
         "breed": "Guppy",
         "age": "5 years",
         "gender": "Female",
-        "image": "fish5.jpg",
+        "image": "fish5.jpeg",
         "description": "A loving and adorable Fish (Guppy) looking for a new home.",
         "location": "Varanasi, Uttar Pradesh"
     },
@@ -1095,7 +1097,7 @@
         "breed": "Guppy",
         "age": "1 years",
         "gender": "Male",
-        "image": "fish1.jpg",
+        "image": "fish1.jpeg",
         "description": "A loving and adorable Fish (Guppy) looking for a new home.",
         "location": "Mumbai, Maharashtra"
     },
@@ -1106,7 +1108,7 @@
         "breed": "Red Squirrel",
         "age": "2 years",
         "gender": "Female",
-        "image": "squirrel2.jpg",
+        "image": "squirrel2.jpeg",
         "description": "A loving and adorable Squirrel (Red Squirrel) looking for a new home.",
         "location": "Delhi, Delhi"
     },
@@ -1117,7 +1119,7 @@
         "breed": "Red Squirrel",
         "age": "3 years",
         "gender": "Male",
-        "image": "squirrel3.jpg",
+        "image": "squirrel3.jpeg",
         "description": "A loving and adorable Squirrel (Red Squirrel) looking for a new home.",
         "location": "Bangalore, Karnataka"
     },
@@ -1128,7 +1130,7 @@
         "breed": "Red Squirrel",
         "age": "4 years",
         "gender": "Female",
-        "image": "squirrel4.jpg",
+        "image": "squirrel4.jpeg",
         "description": "A loving and adorable Squirrel (Red Squirrel) looking for a new home.",
         "location": "Chennai, Tamil Nadu"
     },
@@ -1139,7 +1141,7 @@
         "breed": "Red Squirrel",
         "age": "5 years",
         "gender": "Male",
-        "image": "squirrel5.jpg",
+        "image": "squirrel5.jpeg",
         "description": "A loving and adorable Squirrel (Red Squirrel) looking for a new home.",
         "location": "Hyderabad, Telangana"
     },
@@ -1150,7 +1152,7 @@
         "breed": "Red Squirrel",
         "age": "1 years",
         "gender": "Female",
-        "image": "squirrel1.jpg",
+        "image": "squirrel1.jpeg",
         "description": "A loving and adorable Squirrel (Red Squirrel) looking for a new home.",
         "location": "Pune, Maharashtra"
     },
@@ -1161,7 +1163,7 @@
         "breed": "Grey Squirrel",
         "age": "2 years",
         "gender": "Male",
-        "image": "squirrel2.jpg",
+        "image": "squirrel2.jpeg",
         "description": "A loving and adorable Squirrel (Grey Squirrel) looking for a new home.",
         "location": "Ahmedabad, Gujarat"
     },
@@ -1172,7 +1174,7 @@
         "breed": "Grey Squirrel",
         "age": "3 years",
         "gender": "Female",
-        "image": "squirrel3.jpg",
+        "image": "squirrel3.jpeg",
         "description": "A loving and adorable Squirrel (Grey Squirrel) looking for a new home.",
         "location": "Kolkata, West Bengal"
     },
@@ -1183,7 +1185,7 @@
         "breed": "Grey Squirrel",
         "age": "4 years",
         "gender": "Male",
-        "image": "squirrel4.jpg",
+        "image": "squirrel4.jpeg",
         "description": "A loving and adorable Squirrel (Grey Squirrel) looking for a new home.",
         "location": "Jaipur, Rajasthan"
     },
@@ -1194,7 +1196,7 @@
         "breed": "Grey Squirrel",
         "age": "5 years",
         "gender": "Female",
-        "image": "squirrel5.jpg",
+        "image": "squirrel5.jpeg",
         "description": "A loving and adorable Squirrel (Grey Squirrel) looking for a new home.",
         "location": "Lucknow, Uttar Pradesh"
     },
@@ -1205,7 +1207,7 @@
         "breed": "Grey Squirrel",
         "age": "1 years",
         "gender": "Male",
-        "image": "squirrel1.jpg",
+        "image": "squirrel1.jpeg",
         "description": "A loving and adorable Squirrel (Grey Squirrel) looking for a new home.",
         "location": "Surat, Gujarat"
     }

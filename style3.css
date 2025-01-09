@@ -99,7 +99,7 @@
 .background {
   position: relative;
   height: 100vh;
-  background: url('background image.jpg') center/cover no-repeat;
+  background: url('background image.jpg') center/cover no-repeat; 
   background-attachment: fixed;
   display: flex;
   align-items: center;

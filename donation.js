@@ -15,11 +15,11 @@ paypalScript.onload = () => {
                 // Set selected donation amount
                 donationAmountInput.value = amount;
                 customAmountInput.style.display = "none";
-                customAmountInput.value = ""; // Clear custom input
+                customAmountInput.value = ""; 
             } else {
                 // Show custom input
                 customAmountInput.style.display = "block";
-                donationAmountInput.value = ""; // Clear predefined amount
+                donationAmountInput.value = ""; 
             }
         });
     });
