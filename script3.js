@@ -110,7 +110,7 @@
                   date: "January 20, 2024",
                   location: "City Park, Springfield",
                   description: "Join us for an adoption drive and meet your future furry friends!",
-                  image: "adopdrive.jpg",
+                  image: "/mprj1/petimage.jpeg/adopdrive.jpg",
                   link: "https://www.facebook.com/ChennaiAdoptionDrive/",
                 },
                 {
@@ -118,7 +118,7 @@
                   date: "February 15, 2024",
                   location: "Community Hall, Greenfield",
                   description: "Learn essential pet care tips from experienced veterinarians.",
-                  image: "petcare.jpg",
+                  image: "/mprj1/petimage.jpeg/petcare.jpg",
                   link: "https://littlecrittercare.co.uk/pet-care-workshops/",
                 },
                 {
@@ -126,7 +126,7 @@
                   date: "March 10, 2024",
                   location: "Grand Hotel, Rivertown",
                   description: "A gala dinner to raise funds for shelter animals in need.",
-                  image: "fundraise.jpg",
+                  image: "/mprj1/petimage.jpeg/fundraise.jpg",
                   link: "https://www.kxnet.com/news/top-stories/turtle-mountain-animal-rescue-fundraising-to-keep-animals-safe/",
                 },
               ];
