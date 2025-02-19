@@ -16,7 +16,7 @@ function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: userLocation,
           zoom: 14,
-          mapId: "YOUR_MAP_ID", // Optional if using custom styling
+          mapId: "YOUR_MAP_ID", // Replace with actual Map ID if needed
         });
 
         // Use AdvancedMarkerElement for user location
@@ -55,6 +55,7 @@ function searchNearbyClinics(location) {
 
   service = new google.maps.places.PlacesService(map);
 
+  // Handling the promise correctly with .then() and .catch()
   service
     .nearbySearch(request)
     .then((results) => {
