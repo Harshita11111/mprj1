@@ -1,88 +1,76 @@
 let map;
 let service;
-let infowindow;
 
-// Function to initialize Google Map
-function initMap() {
+// Ensure initMap is globally accessible
+window.initMap = function () {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        const userLocation = new google.maps.LatLng(
-          position.coords.latitude,
-          position.coords.longitude
-        );
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
 
-        // Initialize the map centered at the user's location
+        // Initialize the map
         map = new google.maps.Map(document.getElementById("map"), {
           center: userLocation,
           zoom: 14,
-          mapId: "YOUR_MAP_ID", // Replace with actual Map ID if needed
+          mapId: "DEMO_MAP_ID",
         });
 
-        // Use AdvancedMarkerElement for user location
+        // Add marker for user's location using AdvancedMarkerElement
         new google.maps.marker.AdvancedMarkerElement({
           position: userLocation,
           map: map,
           title: "You are here",
         });
 
-        // Perform a nearby search for clinics
+        // Search for nearby veterinary clinics
         searchNearbyClinics(userLocation);
       },
       (error) => {
-        console.error("Geolocation error:", error.message);
+        console.error("Geolocation failed:", error);
         alert("Geolocation failed. Please enable location access.");
       }
     );
   } else {
-    console.error("Geolocation is not supported by this browser.");
     alert("Geolocation is not supported by this browser.");
   }
-}
+};
 
 // Function to search for nearby veterinary clinics
 function searchNearbyClinics(location) {
-  if (!location || !(location instanceof google.maps.LatLng)) {
-    console.error("Invalid location provided for nearbySearch:", location);
+  if (!map) {
+    console.error("Map is not initialized.");
     return;
   }
 
   const request = {
-    location: location,
-    radius: 5000, // Search within 5 km
-    type: ["veterinary_care"], // Ensure a valid place type
+    location: new google.maps.LatLng(location.lat, location.lng),
+    radius: 5000,
+    type: ["veterinary_care"],
   };
 
+  // Initialize Places Service
   service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, (results, status) => {
+    console.log("Places API Response:", { results, status });
 
-  // Handling the promise correctly with .then() and .catch()
-  service
-    .nearbySearch(request)
-    .then((results) => {
-      if (results && results.length > 0) {
-        displayClinics(results);
-      } else {
-        console.warn("No clinics found nearby.");
-        alert("No veterinary clinics found in this area.");
-      }
-    })
-    .catch((error) => {
-      console.error("Error fetching nearby clinics:", error);
-      alert("An error occurred while searching for clinics. Please try again.");
-    });
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      displayClinics(results);
+    } else {
+      console.error("Places API Error:", status);
+      alert("Error fetching nearby clinics: " + status);
+    }
+  });
 }
 
 // Function to display clinics in the list
 function displayClinics(clinics) {
   const clinicList = document.getElementById("clinic-list");
-  clinicList.innerHTML = ""; // Clear previous results
+  clinicList.innerHTML = ""; 
 
   clinics.forEach((clinic) => {
-    if (!clinic.geometry || !clinic.geometry.location) {
-      console.warn("Skipping clinic with invalid location data:", clinic);
-      return;
-    }
-
     const listItem = document.createElement("li");
     listItem.innerHTML = `
       <strong>${clinic.name}</strong><br>
@@ -94,7 +82,6 @@ function displayClinics(clinics) {
 
     clinicList.appendChild(listItem);
 
-    // Use AdvancedMarkerElement for clinic markers
     new google.maps.marker.AdvancedMarkerElement({
       position: clinic.geometry.location,
       map: map,
@@ -102,6 +89,3 @@ function displayClinics(clinics) {
     });
   });
 }
-
-// Initialize map when window loads
-window.onload = initMap;
