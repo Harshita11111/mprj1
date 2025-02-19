@@ -1,10 +1,8 @@
 let map;
 let service;
-let infowindow;
 
-// Function to initialize Google Map
-function initMap() {
-  // Check if browser supports geolocation
+// Ensure initMap is globally accessible
+window.initMap = function () {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -13,14 +11,15 @@ function initMap() {
           lng: position.coords.longitude,
         };
 
-        // Create Map centered at user's location
+        // Initialize the map
         map = new google.maps.Map(document.getElementById("map"), {
           center: userLocation,
           zoom: 14,
+          mapId: "DEMO_MAP_ID",
         });
 
-        // Add marker for user's location
-        new google.maps.Marker({
+        // Add marker for user's location using AdvancedMarkerElement
+        new google.maps.marker.AdvancedMarkerElement({
           position: userLocation,
           map: map,
           title: "You are here",
@@ -29,30 +28,39 @@ function initMap() {
         // Search for nearby veterinary clinics
         searchNearbyClinics(userLocation);
       },
-      () => {
+      (error) => {
+        console.error("Geolocation failed:", error);
         alert("Geolocation failed. Please enable location access.");
       }
     );
   } else {
     alert("Geolocation is not supported by this browser.");
   }
-}
+};
 
-// Function to search for nearby clinics
+// Function to search for nearby veterinary clinics
 function searchNearbyClinics(location) {
+  if (!map) {
+    console.error("Map is not initialized.");
+    return;
+  }
+
   const request = {
-    location: location,
-    radius: 5000, // Search within 5 km
-    type: ["veterinary_care"], // Veterinary clinics
+    location: new google.maps.LatLng(location.lat, location.lng),
+    radius: 5000,
+    type: ["veterinary_care"],
   };
 
-  // Create Places Service
+  // Initialize Places Service
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
+    console.log("Places API Response:", { results, status });
+
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       displayClinics(results);
     } else {
-      alert("No clinics found nearby.");
+      console.error("Places API Error:", status);
+      alert("Error fetching nearby clinics: " + status);
     }
   });
 }
@@ -60,10 +68,9 @@ function searchNearbyClinics(location) {
 // Function to display clinics in the list
 function displayClinics(clinics) {
   const clinicList = document.getElementById("clinic-list");
-  clinicList.innerHTML = ""; // Clear previous results
+  clinicList.innerHTML = ""; 
 
   clinics.forEach((clinic) => {
-    // Create List Item
     const listItem = document.createElement("li");
     listItem.innerHTML = `
       <strong>${clinic.name}</strong><br>
@@ -75,14 +82,10 @@ function displayClinics(clinics) {
 
     clinicList.appendChild(listItem);
 
-    // Add marker on the map
-    new google.maps.Marker({
+    new google.maps.marker.AdvancedMarkerElement({
       position: clinic.geometry.location,
       map: map,
       title: clinic.name,
     });
   });
 }
-
-// Initialize the map
-window.onload = initMap;
