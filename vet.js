@@ -47,7 +47,7 @@ function searchNearbyClinics(location) {
 
   const request = {
     location: new google.maps.LatLng(location.lat, location.lng),
-    radius: 5000,
+    radius: '5000',
     type: ["veterinary_care"],
   };
 
