@@ -15,7 +15,6 @@ window.initMap = function () {
         map = new google.maps.Map(document.getElementById("map"), {
           center: userLocation,
           zoom: 14,
-          mapId: "DEMO_MAP_ID",
         });
 
         // Add marker for user's location using AdvancedMarkerElement
