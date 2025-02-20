@@ -1,129 +1,120 @@
 let map;
 let service;
 
-window.initMap = async function () {
-  try {
-    console.log("🟢 Initializing Map...");
+// ✅ Initialize the Map
+async function initMap() {
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported by this browser.");
+        return;
+    }
 
-    const userLocation = await getUserLocation();
-    console.log("🟢 User Location:", userLocation);
-
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: userLocation,
-      zoom: 14,
-      mapId: "b364784da23176c8",
-    });
-
-    new google.maps.marker.AdvancedMarkerElement({
-      position: userLocation,
-      map: map,
-      title: "You are here",
-    });
-
-    service = new google.maps.places.PlacesService(map); // Ensure service is initialized
-
-    await searchNearbyClinics(userLocation);
-  } catch (error) {
-    console.error("❌ Error initializing map:", error);
-    alert("Failed to initialize map: " + error.message);
-  }
-};
-
-// ✅ Properly handles geolocation errors
-async function getUserLocation() {
-  return new Promise((resolve, reject) => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          resolve({
+    try {
+        const position = await getCurrentPosition();
+        const userLocation = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
-          });
-        },
-        (error) => {
-          console.error("❌ Geolocation error:", error);
-          reject(new Error("Geolocation failed. Please enable location access."));
-        }
-      );
-    } else {
-      reject(new Error("Geolocation is not supported by this browser."));
+        };
+
+        // ✅ Initialize the map
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: userLocation,
+            zoom: 14,
+            mapId: "b364784da23176c8",
+        });
+
+        // ✅ Add user marker using AdvancedMarkerElement
+        new google.maps.marker.AdvancedMarkerElement({
+            position: userLocation,
+            map: map,
+            title: "You are here",
+        });
+
+        // ✅ Initialize PlacesService after the map is ready
+        service = new google.maps.places.PlacesService(map);
+        console.log("✅ PlacesService Initialized:", service);
+
+        // ✅ Search for clinics
+        await searchNearbyClinics(userLocation);
+    } catch (error) {
+        console.error("❌ Geolocation error:", error);
+        alert("Geolocation failed. Please enable location access.");
     }
-  });
 }
 
-// ✅ Uses async/await and proper error handling
+// ✅ Convert `getCurrentPosition()` into a Promise-based function
+function getCurrentPosition() {
+    return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+    });
+}
+
+// ✅ Search for nearby veterinary clinics
 async function searchNearbyClinics(location) {
-  if (!map || !service) {
-    console.error("❌ Map or Places Service is not initialized.");
-    return;
-  }
-
-  const request = {
-    location: new google.maps.LatLng(location.lat, location.lng),
-    radius: 5000,
-    type: ["veterinary_care"],
-  };
-
-  console.log("🟢 Sending Places API request:", request);
-
-  try {
-    const results = await nearbySearchPromise(service, request);
-
-    console.log("🟢 Places API Response:", results);
-
-    if (Array.isArray(results) && results.length > 0) {
-      displayClinics(results);
-    } else {
-      console.warn("⚠️ No clinics found in API response.");
-      alert("No veterinary clinics found nearby.");
+    if (!service) {
+        console.error("❌ PlacesService is not initialized!");
+        return;
     }
-  } catch (error) {
-    console.error("❌ Places API Error:", error);
-    alert("Error fetching nearby clinics: " + error.message);
-  }
+
+    const request = {
+        location: new google.maps.LatLng(location.lat, location.lng),
+        radius: 5000,
+        type: ["veterinary_care"],
+    };
+
+    try {
+        const results = await nearbySearchPromise(request);
+        console.log("✅ Places API Response:", results);
+
+        if (results.length === 0) {
+            alert("No veterinary clinics found nearby.");
+            return;
+        }
+
+        displayClinics(results);
+    } catch (error) {
+        console.error("❌ Places API Error:", error);
+        alert("Error fetching nearby clinics: " + error.message);
+    }
 }
 
-// ✅ Converts Google Places API callback into a Promise
-function nearbySearchPromise(service, request) {
-  return new Promise((resolve, reject) => {
-    service.nearbySearch(request, (results, status) => {
-      console.log("🟢 Places API Callback:", { results, status });
-
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        resolve(results);
-      } else {
-        reject(new Error("Places API Error: " + status));
-      }
+// ✅ Convert `nearbySearch()` into a Promise-based function
+function nearbySearchPromise(request) {
+    return new Promise((resolve, reject) => {
+        service.nearbySearch(request, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                resolve(results);
+            } else {
+                reject(new Error("PlacesServiceStatus: " + status));
+            }
+        });
     });
-  });
 }
 
-// ✅ Displays results properly
+// ✅ Display clinics on the map and list
 function displayClinics(clinics) {
-  const clinicList = document.getElementById("clinic-list");
-  if (!clinicList) {
-    console.error("❌ Error: clinic-list element not found.");
-    return;
-  }
+    const clinicList = document.getElementById("clinic-list");
+    clinicList.innerHTML = ""; // Clear previous results
 
-  clinicList.innerHTML = "";
+    clinics.forEach((clinic) => {
+        // ✅ Create a list item for each clinic
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+            <strong>${clinic.name}</strong><br>
+            ${clinic.vicinity || "No address available"}<br>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+                clinic.vicinity
+            )}" target="_blank">Get Directions</a>
+        `;
+        clinicList.appendChild(listItem);
 
-  clinics.forEach((clinic) => {
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-      <strong>${clinic.name}</strong><br>
-      ${clinic.vicinity || "No address available"}<br>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-        clinic.vicinity
-      )}" target="_blank">Get Directions</a>
-    `;
-
-    clinicList.appendChild(listItem);
-
-    new google.maps.marker.AdvancedMarkerElement({
-      position: clinic.geometry.location,
-      map: map,
-      title: clinic.name,
+        // ✅ Add marker for each clinic
+        new google.maps.marker.AdvancedMarkerElement({
+            position: clinic.geometry.location,
+            map: map,
+            title: clinic.name,
+        });
     });
-  });
 }
+
+// ✅ Call `initMap()` when the window loads
+window.initMap = initMap;
