@@ -50,31 +50,38 @@ function getCurrentPosition() {
 
 // ✅ Search for nearby veterinary clinics
 async function searchNearbyClinics(location) {
-    if (!service) {
-        console.error("❌ PlacesService is not initialized!");
+    if (!map) {
+        console.error("Map is not initialized.");
         return;
     }
 
     const request = {
         location: new google.maps.LatLng(location.lat, location.lng),
         radius: 5000,
-        type: ["veterinary_clinic"],
+        keyword: "veterinary clinic",  // Using keyword instead of type
     };
 
+    console.log("🟢 Sending Places API request:", request);
+
+    const service = new google.maps.places.PlacesService(map);
+
     try {
-        console.log("🟢 Sending Places API request:", request); // Log request
-        const results = await nearbySearchPromise(request);
-        console.log("✅ Places API Response:", results); // Log success
+        const results = await new Promise((resolve, reject) => {
+            service.nearbySearch(request, (places, status) => {
+                console.log("🔍 Raw API Response:", { places, status }); // Log full response
 
-        if (!results || results.length === 0) {
-            alert("No veterinary clinics found nearby.");
-            return;
-        }
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    resolve(places);
+                } else {
+                    reject(`Places API Error: ${status}`);
+                }
+            });
+        });
 
+        console.log("✅ Places API Response:", results);
         displayClinics(results);
     } catch (error) {
-        console.error("❌ Places API Error:", error.message);
-        alert("Error fetching nearby clinics: " + error.message);
+        console.error("❌ Error fetching nearby clinics:", error);
     }
 }
 
