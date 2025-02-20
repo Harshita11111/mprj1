@@ -54,6 +54,10 @@ function searchNearbyClinics(location) {
   // Initialize Places Service
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
+     if (!results || !status) {
+    console.error("Error: Results or status is undefined.");
+    return;
+  }
     console.log("Places API Response:", { results, status });
 
     if (status === google.maps.places.PlacesServiceStatus.OK) {
