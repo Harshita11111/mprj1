@@ -1,32 +1,35 @@
 let map;
 let service;
 
-// Ensure initMap is globally accessible
 window.initMap = async function () {
   try {
-    const userLocation = await getUserLocation(); // Get user's location
+    console.log("🟢 Initializing Map...");
+
+    const userLocation = await getUserLocation();
+    console.log("🟢 User Location:", userLocation);
+
     map = new google.maps.Map(document.getElementById("map"), {
       center: userLocation,
       zoom: 14,
       mapId: "b364784da23176c8",
     });
 
-    // Add marker for user's location
     new google.maps.marker.AdvancedMarkerElement({
       position: userLocation,
       map: map,
       title: "You are here",
     });
 
-    // Search for nearby veterinary clinics
+    service = new google.maps.places.PlacesService(map); // Ensure service is initialized
+
     await searchNearbyClinics(userLocation);
   } catch (error) {
-    console.error("Error initializing map:", error);
+    console.error("❌ Error initializing map:", error);
     alert("Failed to initialize map: " + error.message);
   }
 };
 
-// ✅ Function to get user's geolocation using Promises
+// ✅ Properly handles geolocation errors
 async function getUserLocation() {
   return new Promise((resolve, reject) => {
     if (navigator.geolocation) {
@@ -38,6 +41,7 @@ async function getUserLocation() {
           });
         },
         (error) => {
+          console.error("❌ Geolocation error:", error);
           reject(new Error("Geolocation failed. Please enable location access."));
         }
       );
@@ -47,9 +51,12 @@ async function getUserLocation() {
   });
 }
 
-// ✅ Function to search for nearby veterinary clinics (promisified)
+// ✅ Uses async/await and proper error handling
 async function searchNearbyClinics(location) {
-  if (!map) throw new Error("Map is not initialized.");
+  if (!map || !service) {
+    console.error("❌ Map or Places Service is not initialized.");
+    return;
+  }
 
   const request = {
     location: new google.maps.LatLng(location.lat, location.lng),
@@ -57,28 +64,31 @@ async function searchNearbyClinics(location) {
     type: ["veterinary_care"],
   };
 
-  // Initialize Places Service
-  service = new google.maps.places.PlacesService(map);
+  console.log("🟢 Sending Places API request:", request);
 
   try {
     const results = await nearbySearchPromise(service, request);
-    console.log("Places API Response:", results);
 
-    if (results.length > 0) {
+    console.log("🟢 Places API Response:", results);
+
+    if (Array.isArray(results) && results.length > 0) {
       displayClinics(results);
     } else {
+      console.warn("⚠️ No clinics found in API response.");
       alert("No veterinary clinics found nearby.");
     }
   } catch (error) {
-    console.error("Places API Error:", error);
+    console.error("❌ Places API Error:", error);
     alert("Error fetching nearby clinics: " + error.message);
   }
 }
 
-// ✅ Function to promisify the Google Places API nearbySearch
+// ✅ Converts Google Places API callback into a Promise
 function nearbySearchPromise(service, request) {
   return new Promise((resolve, reject) => {
     service.nearbySearch(request, (results, status) => {
+      console.log("🟢 Places API Callback:", { results, status });
+
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         resolve(results);
       } else {
@@ -88,15 +98,15 @@ function nearbySearchPromise(service, request) {
   });
 }
 
-// ✅ Function to display clinics in the list
+// ✅ Displays results properly
 function displayClinics(clinics) {
   const clinicList = document.getElementById("clinic-list");
   if (!clinicList) {
-    console.error("Error: clinic-list element not found.");
+    console.error("❌ Error: clinic-list element not found.");
     return;
   }
 
-  clinicList.innerHTML = ""; // Clear existing list
+  clinicList.innerHTML = "";
 
   clinics.forEach((clinic) => {
     const listItem = document.createElement("li");
