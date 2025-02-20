@@ -54,10 +54,11 @@ function searchNearbyClinics(location) {
   // Initialize Places Service
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
-     if (!results || !status) {
-    console.error("Error: Results or status is undefined.");
-    return;
-  }
+    if (!results || typeof status === "undefined") {
+      console.error("Error: Results or status is undefined.");
+      return;
+    }
+
     console.log("Places API Response:", { results, status });
 
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -72,15 +73,24 @@ function searchNearbyClinics(location) {
 // Function to display clinics in the list
 function displayClinics(clinics) {
   const clinicList = document.getElementById("clinic-list");
+  if (!clinicList) {
+    console.error("Error: Clinic list element not found.");
+    return;
+  }
   clinicList.innerHTML = ""; 
 
   clinics.forEach((clinic) => {
+    if (!clinic.geometry || !clinic.geometry.location) {
+      console.warn("Skipping clinic due to missing location data:", clinic);
+      return;
+    }
+
     const listItem = document.createElement("li");
     listItem.innerHTML = `
       <strong>${clinic.name}</strong><br>
       ${clinic.vicinity || "No address available"}<br>
       <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-        clinic.vicinity
+        clinic.vicinity || ""
       )}" target="_blank">Get Directions</a>
     `;
 
