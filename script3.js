@@ -1,60 +1,4 @@
-// ---------------for google map api---------
-
-
-        // function initMap() {
-        //     // Check if Geolocation is available
-        //     if (navigator.geolocation) {
-        //         navigator.geolocation.getCurrentPosition(
-        //             (position) => {
-        //                 const userLocation = {
-        //                     lat: position.coords.latitude,
-        //                     lng: position.coords.longitude,
-        //                 };
-
-        //                 // Initialize the map
-        //                 const map = new google.maps.Map(document.getElementById("map"), {
-        //                     center: userLocation,
-        //                     zoom: 14,
-        //                 });
-
-        //                 // Add a marker for the user's location
-        //                 new google.maps.Marker({
-        //                     position: userLocation,
-        //                     map: map,
-        //                     title: "You are here!",
-        //                 });
-        //             },
-        //             (error) => {
-        //                 console.error("Error getting location: ", error);
-        //                 alert("Unable to retrieve your location.");
-        //             }
-        //         );
-        //     } else {
-        //         alert("Geolocation is not supported by this browser.");
-        //     }
-        // }
-
-        // // Initialize the map after the API is loaded
-        // window.onload = initMap;
-
-
-
-
-
-
-
-// ----------------------------for raed more button on pet adoption page---------------
-
-     
-
-
-
-
-
-
-
-            // Array of animals available for adoption
-            function displayAnimals() {
+ function displayAnimals() {
               if (!document.getElementById("adoption")) return;
             
               const animals = [
@@ -100,7 +44,6 @@
               });
             }
             
-            // Function to Run on the Events Page
             function displayEvents() {
               if (!document.getElementById("welfareevents")) return;
             
@@ -150,8 +93,7 @@
               });
             }
             
-            // Initialize Functions Based on Page
             document.addEventListener("DOMContentLoaded", () => {
-              displayAnimals(); // Runs only on adoption page
-              displayEvents(); // Runs only on events page
+              displayAnimals(); 
+              displayEvents(); 
             });
