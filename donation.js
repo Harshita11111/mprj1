@@ -1,4 +1,4 @@
-// Include the PayPal SDK dynamically
+
 const paypalScript = document.createElement("script");
 paypalScript.src = "https://www.paypal.com/sdk/js?client-id=AS3LWrkE7mDtdX8Wvj9OHG4NCNT2nSSViw-ZI9ijbhz0PCepE1_bapH4Uhcv__Bbd7nGWwOsZpKJF96p&currency=USD"; // Replace with your PayPal client ID
 document.head.appendChild(paypalScript);
@@ -7,35 +7,29 @@ paypalScript.onload = () => {
     const donationAmountInput = document.getElementById("donationAmount");
     const customAmountInput = document.getElementById("custom-amount");
 
-    // Handle amount button clicks
+    //button click ki settings
     document.querySelectorAll(".amount-buttons button").forEach((button) => {
         button.addEventListener("click", (e) => {
             const amount = e.target.getAttribute("data-amount");
             if (amount) {
-                // Set selected donation amount
                 donationAmountInput.value = amount;
                 customAmountInput.style.display = "none";
-                customAmountInput.value = ""; // Clear custom input
+                customAmountInput.value = ""; 
             } else {
-                // Show custom input
                 customAmountInput.style.display = "block";
-                donationAmountInput.value = ""; // Clear predefined amount
+                donationAmountInput.value = ""; 
             }
         });
     });
 
-    // Listen for changes in the custom amount input
     customAmountInput.addEventListener("input", () => {
         donationAmountInput.value = customAmountInput.value;
     });
 
     // Render PayPal Buttons
     paypal.Buttons({
-        createOrder: (data, actions) => { // Fixed missing 'data'
-            // Get the donation amount
+        createOrder: (data, actions) => { 
             let amount = donationAmountInput.value.trim() || customAmountInput.value.trim();
-
-            // Validate amount
             if (!amount || isNaN(amount) || amount <= 0) {
                 alert("Please select or enter a valid donation amount.");
                 throw new Error("Invalid donation amount.");
@@ -54,7 +48,6 @@ paypalScript.onload = () => {
         },
 
         onApprove: (data, actions) => {
-            // Capture transaction
             return actions.order.capture().then((details) => {
                 alert(`Thank you, ${details.payer.name.given_name}, for your donation of Rs ${details.purchase_units[0].amount.value}!`);
             });
