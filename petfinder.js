@@ -1,17 +1,14 @@
-
- 
-
 document.addEventListener("DOMContentLoaded", () => {
-  const speciesFilter = document.getElementById("species-filter");
-  const breedFilter = document.getElementById("breed-filter");
-  const locationFilter = document.getElementById("location-filter");
-  const searchBar = document.getElementById("search-bar");
-  const searchBtn = document.getElementById("search-button");
-  const applyFiltersBtn = document.getElementById("apply-filters");
-  const resultList = document.getElementById("result-list");
-  const prevBtn = document.getElementById("prev-btn");
-  const nextBtn = document.getElementById("next-btn");
-  const pageInfo = document.getElementById("page-info");
+ const speciesFilter = document.getElementById("species-filter");
+ const breedFilter = document.getElementById("breed-filter");
+ const locationFilter = document.getElementById("location-filter");
+ const searchBar = document.getElementById("search-bar");
+ const searchBtn = document.getElementById("search-button");
+ const applyFiltersBtn = document.getElementById("apply-filters");
+ const resultList = document.getElementById("result-list");
+ const prevBtn = document.getElementById("prev-btn");
+ const nextBtn = document.getElementById("next-btn");
+ const pageInfo = document.getElementById("page-info");
   
   if (!speciesFilter || !breedFilter || !locationFilter || !searchBar || !searchBtn || !applyFiltersBtn || !resultList || !prevBtn || !nextBtn || !pageInfo) {
     console.error("One or more DOM elements are missing.");
@@ -21,24 +18,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let pets = [];
   let filteredPets = [];
   let currentPage = 1;
-  const itemsPerPage = 3; // Number of pets to show per page
+  const itemsPerPage = 3; 
   
-  // Fetch JSON Data
   async function loadPets() {
     try {
-      const response = await fetch("adoptable_pets.json"); // Update path if needed
+      const response = await fetch("adoptable_pets.json"); 
       if (!response.ok) throw new Error("Failed to fetch pets data");
   
-      pets = await response.json(); // Load pets
-      filteredPets = pets; // Default filtered pets
+      pets = await response.json();
+      filteredPets = pets; 
       populateFilters();
-      updatePage(1); // Load first page
+      updatePage(1); 
     } catch (error) {
       console.error("Error loading pets:", error);
     }
   }
   
-  // Populate Filters
   function populateFilters() {
     const breeds = [...new Set(pets.map((pet) => pet.breed))];
     const locations = [...new Set(pets.map((pet) => pet.location))];
@@ -56,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   
-  // Display Pets for Current Page
   function displayPets(petsToShow) {
     resultList.innerHTML = "";
   
@@ -80,8 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultList.appendChild(petCard);
     });
   }
-  
-  // Pagination Logic
+
   function updatePage(page) {
     currentPage = page;
   
@@ -93,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePaginationControls();
   }
   
-  // Update Pagination Controls
   function updatePaginationControls() {
     pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(
       filteredPets.length / itemsPerPage
@@ -102,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.disabled = currentPage === Math.ceil(filteredPets.length / itemsPerPage);
   }
   
-  // Apply Filters
   applyFiltersBtn.addEventListener("click", () => {
     const species = speciesFilter.value;
     const breed = breedFilter.value;
@@ -117,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePage(1);
   });
   
-  // Search Button
   searchBtn.addEventListener("click", () => {
     const query = searchBar.value.toLowerCase();
     filteredPets = pets.filter((pet) =>
@@ -125,8 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     updatePage(1);
   });
-  
-  // Pagination Buttons
+ 
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
       updatePage(currentPage - 1);
@@ -139,7 +128,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
-  // Load Pets Data
   loadPets();
   
   });
