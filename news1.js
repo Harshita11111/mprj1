@@ -1,8 +1,7 @@
-const apiKey = "3287dccaa0ae41c8a2e532e197c52950"; // Replace with your NewsAPI key
+const apiKey = "3287dccaa0ae41c8a2e532e197c52950"; 
 const apiUrl = `https://newsapi.org/v2/everything?q=animal%20welfare&apiKey=${apiKey}`;
 const newsContainer = document.getElementById("news-container");
 
-// Predefined Local News Articles (Fallback)
 const localArticles = [
   {
     title: "WeWork India and Heads Up For Tails Join Forces to Drive Pet Adoption with ‘Adopt Don’t Shop’",
@@ -30,37 +29,30 @@ const localArticles = [
   }
 ];
 
-// Fetch News Articles from API
 async function fetchNews() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
-
-    // Check if articles are available
     if (data.articles && data.articles.length > 0) {
-      displayArticles(data.articles); // Use API data
+      displayArticles(data.articles); 
     } else {
-      displayArticles(localArticles); // Fallback to local articles
+      displayArticles(localArticles); 
     }
   } catch (error) {
     console.error("Failed to fetch news from API. Using local articles.", error);
-    displayArticles(localArticles); // Fallback in case of error
+    displayArticles(localArticles); 
   }
 }
-
-// Display Articles (API or Local)
 function displayArticles(articles) {
-  newsContainer.innerHTML = ""; // Clear existing content
+  newsContainer.innerHTML = ""; 
 
   articles.slice(0, 6).forEach((article) => {
     const articleDiv = document.createElement("div");
     articleDiv.classList.add("news-article");
 
-    // Handle missing images
     const imageUrl = article.urlToImage || article.image || "https://via.placeholder.com/300x200";
     const description = article.description || "No description available.";
 
-    // Add articleDiv content
     articleDiv.innerHTML = `
       <img src="${imageUrl}" alt="${article.title}"  >
       <h3>${article.title}</h3>
@@ -72,6 +64,4 @@ function displayArticles(articles) {
     newsContainer.appendChild(articleDiv);
   });
 }
-
-// Load news on page load
 fetchNews();
