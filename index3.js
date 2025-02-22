@@ -1,15 +1,15 @@
 const feedbackForm = document.getElementById("feedback");
 const feedbackList = document.getElementById("feedback-list");
 
-// Load Existing Feedback from LocalStorage
+// Loading here Feedback from LocalStorage(take from user)
 const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
 
 // Display Feedback Function
 function displayFeedback() {
-  feedbackList.innerHTML = ""; // Clear old data
+  feedbackList.innerHTML = ""; 
 
   // Display the latest 5 feedback entries
-  const recentFeedback = feedbackData.slice(-5); // Show only the last 5 entries
+  const recentFeedback = feedbackData.slice(-5); 
   recentFeedback.forEach((feedback) => {
     const feedbackDiv = document.createElement("div");
     feedbackDiv.classList.add("feedback-div");
@@ -22,44 +22,33 @@ function displayFeedback() {
   });
 }
 
-// Save Feedback Function
+// Save it
 feedbackForm.addEventListener("submit", (e) => {
-  e.preventDefault(); // Prevent page reload
+  e.preventDefault(); 
 
-  // Get input values
+ 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
 
-  // Create feedback object
+  // feedback ka object
   const feedback = { name, email, phone, message };
-  feedbackData.push(feedback); // Add new feedback to the array
+  feedbackData.push(feedback); 
 
   // Save updated feedback to LocalStorage
   localStorage.setItem("feedback", JSON.stringify(feedbackData));
-
-  // Clear the form
   feedbackForm.reset();
-
-  // Display updated feedback
   displayFeedback();
 
-  // Notify user
   alert("Thank you for your feedback!");
 });
 
-// Display feedback when the page loads
+
 displayFeedback();
 
 
-
-
-
-
-
-
-
+// PART FOR MAKING GEOLOCATION PART
 function showLocationOnMap() {
     const mapDiv = document.getElementById("map");
   
@@ -88,61 +77,10 @@ function showLocationOnMap() {
       mapDiv.innerHTML = "<p>Geolocation is not supported by this browser.</p>";
     }
   }
-  
-  // Display user's current location
+// DISPLAY
   showLocationOnMap();
 
 
 
 
-//  // Select feedback form and display container
-// const feedbackForm = document.getElementById("feedback");
-// const feedbackList = document.getElementById("feedback-list");
 
-// // Load existing feedback from localStorage
-// function loadFeedback() {
-//   const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
-//   feedbackList.innerHTML = ""; // Clear existing feedback
-
-//   feedbackData.forEach((item) => {
-//     displayFeedback(item.username, item.feedback);
-//   });
-// }
-
-// // Save feedback to localStorage
-// function saveFeedback(username, feedback) {
-//   const feedbackData = JSON.parse(localStorage.getItem("feedback")) || [];
-//   feedbackData.push({ username, feedback });
-//   localStorage.setItem("feedback", JSON.stringify(feedbackData));
-// }
-
-// // Display feedback dynamically in div format
-// function displayFeedback(username, feedback) {
-//   const feedbackDiv = document.createElement("div");
-//   feedbackDiv.classList.add("feedback-div");
-
-//   feedbackDiv.innerHTML = `
-//     <h3>${username}</h3>
-//     <p>${feedback}</p>
-//   `;
-
-//   feedbackList.appendChild(feedbackDiv);
-// }
-
-// // Handle form submission
-// feedbackForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   const username = document.getElementById("username").value;
-//   const feedback = document.getElementById("feedback").value;
-
-//   // Save and display feedback
-//   saveFeedback(username, feedback);
-//   displayFeedback(username, feedback);
-
-//   // Clear form fields
-//   feedbackForm.reset();
-// });
-
-// // Load feedback on page load
-// loadFeedback();
