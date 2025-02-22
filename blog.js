@@ -1,4 +1,3 @@
-
 function toggleVisibility(button) {
 
   const container = button.closest('.context');
